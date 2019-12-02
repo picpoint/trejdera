@@ -98,8 +98,112 @@ img {
 .smart {
   display: flex;
   justify-content: center;
-  height: 100vh;
+  height: 1200px;
   background-image: url("/pict/bkg1.png");
   background-size: cover;
   background-position: center;
+}
+.smart__wrapper {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.smart__menu {
+  border: 1px solid red;
+  display: flex;
+  height: 70px;
+  width: 100%;
+  margin-top: 30px;
+}
+.smart__logoblock {
+  border: 1px solid red;
+  display: flex;
+  width: 20%;
+}
+.smart__logoblock a {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  margin-left: 30px;
+}
+.smart__logoblock a img {
+  width: 35px;
+  height: 35px;
+}
+.smart__logoblock span {
+  font-weight: bolder;
+  font-size: 2rem;
+  align-self: center;
+  color: white;
+}
+.smart__menublock {
+  border: 1px solid red;
+  width: 60%;
+}
+.smart__list {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.smart__list li {
+  display: flex;
+  margin: 0 25px;
+}
+.smart__list li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+.smart__list li a:hover {
+  border-bottom: 2px solid white;
+}
+.smart__regblock {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  width: 20%;
+}
+.smart__regblock button {
+  align-self: center;
+  height: 65%;
+  color: white;
+  font-size: 1.1rem;
+  outline: none;
+  cursor: pointer;
+}
+.smart__regblock button i {
+  margin-right: 10px;
+}
+.smart__regblock button:nth-child(1) {
+  width: 100px;
+  background: none;
+  border: 2px solid white;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+.smart__regblock button:nth-child(2) {
+  width: 150px;
+  border-radius: 30px;
+  background-color: #201375;
+  border: none;
+}
+.smart__textdescblock {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 40%;
+}
+.smart__textdescblock span {
+  border: 1px solid red;
+  align-self: center;
+  width: 50%;
+  color: white;
+  text-align: center;
+  font-size: 4.5rem;
 }
