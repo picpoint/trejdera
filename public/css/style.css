@@ -1,3 +1,7 @@
+@font-face {
+  font-family: 'Sulphur Point', sans-serif;
+  src: url('../../public/fonts/SulphurPoint-Bold.ttf');
+}
 body,
 div,
 dl,
@@ -98,31 +102,27 @@ img {
 .smart {
   display: flex;
   justify-content: center;
-  height: 1200px;
+  height: 1100px;
   background-image: url("/pict/bkg1.png");
   background-size: cover;
   background-position: center;
 }
 .smart__wrapper {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   width: 100%;
 }
 .smart__menu {
-  border: 1px solid red;
   display: flex;
   height: 70px;
   width: 100%;
   margin-top: 30px;
 }
 .smart__logoblock {
-  border: 1px solid red;
   display: flex;
   width: 20%;
 }
 .smart__logoblock a {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -138,13 +138,12 @@ img {
   font-size: 2rem;
   align-self: center;
   color: white;
+  font-family: 'Sulphur Point', sans-serif;
 }
 .smart__menublock {
-  border: 1px solid red;
   width: 60%;
 }
 .smart__list {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,17 +152,17 @@ img {
 .smart__list li {
   display: flex;
   margin: 0 25px;
+  font-family: 'Sulphur Point', sans-serif;
 }
 .smart__list li a {
   color: white;
   text-decoration: none;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 .smart__list li a:hover {
   border-bottom: 2px solid white;
 }
 .smart__regblock {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   width: 20%;
@@ -193,17 +192,45 @@ img {
   border: none;
 }
 .smart__textdescblock {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   height: 40%;
 }
 .smart__textdescblock span {
-  border: 1px solid red;
   align-self: center;
   width: 50%;
   color: white;
   text-align: center;
-  font-size: 4.5rem;
+  font-size: 4rem;
+  font-family: 'Sulphur Point', sans-serif;
+  font-weight: bolder;
+}
+.smart__watch {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 65px;
+  margin-right: 100px;
+}
+.smart__watch span {
+  color: white;
+  font-family: 'Sulphur Point', sans-serif;
+}
+.smart__watch button {
+  background: none;
+  background-image: url("/pict/btnplay.png");
+  background-position: center;
+  background-size: cover;
+  border-radius: 50px;
+  border: none;
+  margin: 0 20px;
+  height: 105px;
+  width: 105px;
+  outline: none;
+  cursor: pointer;
+}
+.smart__phone {
+  border: 1px solid red;
+  display: flex;
 }
