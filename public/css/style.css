@@ -100,9 +100,9 @@ img {
   height: auto;
 }
 .smart {
+  border: 1px solid red;
   display: flex;
   justify-content: center;
-  height: 1100px;
   background-image: url("/pict/bkg1.png");
   background-size: cover;
   background-position: center;
@@ -195,7 +195,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 40%;
+  height: 450px;
 }
 .smart__textdescblock span {
   align-self: center;
@@ -231,6 +231,36 @@ img {
   cursor: pointer;
 }
 .smart__phone {
-  border: 1px solid red;
   display: flex;
+  justify-content: center;
+}
+.smart__tel {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -250px;
+}
+.smart__tel img {
+  position: relative;
+  bottom: 35px;
+  left: 70px;
+  height: 100%;
+  width: 100%;
+}
+.smart__bitcoin {
+  position: absolute;
+  left: 51%;
+  height: 220px;
+  bottom: -25px;
+}
+.smart__bitcoin img {
+  height: 100%;
+}
+.smart__ethereum {
+  position: absolute;
+  left: 49%;
+  height: 220px;
+  bottom: -190px;
+}
+.smart__ethereum img {
+  height: 100%;
 }
