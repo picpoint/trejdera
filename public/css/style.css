@@ -100,7 +100,6 @@ img {
   height: auto;
 }
 .smart {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   background-image: url("/pict/bkg1.png");
@@ -113,14 +112,36 @@ img {
   width: 100%;
 }
 .smart__menu {
+  border: 1px solid red;
   display: flex;
+  justify-content: center;
   height: 70px;
   width: 100%;
   margin-top: 30px;
 }
 .smart__logoblock {
+  border: 1px solid red;
   display: flex;
   width: 20%;
+  transition: ease-in-out 0.5s;
+}
+@media screen and (max-width: 1400px) {
+  .smart__logoblock {
+    width: 17%;
+    transition: ease-in-out 0.5s;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .smart__logoblock {
+    width: 20%;
+    transition: ease-in-out 0.5s;
+  }
+}
+@media screen and (max-width: 960px) {
+  .smart__logoblock {
+    width: 15%;
+    transition: ease-in-out 0.5s;
+  }
 }
 .smart__logoblock a {
   display: flex;
@@ -128,6 +149,13 @@ img {
   align-items: center;
   width: 70px;
   margin-left: 30px;
+  transition: ease-in-out 0.5s;
+}
+@media screen and (max-width: 1400px) {
+  .smart__logoblock a {
+    margin-left: 0px;
+    transition: ease-in-out 0.5s;
+  }
 }
 .smart__logoblock a img {
   width: 35px;
@@ -139,9 +167,40 @@ img {
   align-self: center;
   color: white;
   font-family: 'Sulphur Point', sans-serif;
+  transition: ease-in-out 0.5s;
+}
+@media screen and (max-width: 1140px) {
+  .smart__logoblock span {
+    font-size: 1.5rem;
+    transition: ease-in-out 0.5s;
+  }
+}
+@media screen and (max-width: 960px) {
+  .smart__logoblock span {
+    font-size: 1.3rem;
+  }
 }
 .smart__menublock {
+  border: 1px solid red;
   width: 60%;
+  transition: ease-in-out 0.5s;
+}
+@media screen and (max-width: 1400px) {
+  .smart__menublock {
+    width: 66%;
+    transition: ease-in-out 0.5s;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .smart__menublock {
+    width: 55%;
+    transition: ease-in-out 0.5s;
+  }
+}
+@media screen and (max-width: 960px) {
+  .smart__menublock {
+    width: 65%;
+  }
 }
 .smart__list {
   display: flex;
@@ -150,22 +209,49 @@ img {
   height: 100%;
 }
 .smart__list li {
+  border: 1px solid red;
   display: flex;
   margin: 0 25px;
   font-family: 'Sulphur Point', sans-serif;
+}
+@media screen and (max-width: 1140px) {
+  .smart__list li {
+    margin: 0 10px;
+  }
 }
 .smart__list li a {
   color: white;
   text-decoration: none;
   font-size: 1.2rem;
+  transition: ease-in-out 0.5s;
+}
+@media screen and (max-width: 1140px) {
+  .smart__list li a {
+    font-size: 1rem;
+    transition: ease-in-out 0.5s;
+  }
 }
 .smart__list li a:hover {
   border-bottom: 2px solid white;
 }
 .smart__regblock {
+  border: 1px solid red;
   display: flex;
   justify-content: center;
   width: 20%;
+  transition: ease-in-out 0.5s;
+}
+@media screen and (max-width: 1140px) {
+  .smart__regblock {
+    width: 25%;
+    transition: ease-in-out 0.5s;
+  }
+}
+@media screen and (max-width: 960px) {
+  .smart__regblock {
+    width: 20%;
+    transition: ease-in-out 0.5s;
+  }
 }
 .smart__regblock button {
   align-self: center;
@@ -174,6 +260,13 @@ img {
   font-size: 1.1rem;
   outline: none;
   cursor: pointer;
+  transition: ease-in-out 0.5s;
+}
+@media screen and (max-width: 1140px) {
+  .smart__regblock button {
+    font-size: 0.9rem;
+    transition: ease-in-out 0.5s;
+  }
 }
 .smart__regblock button i {
   margin-right: 10px;
@@ -185,11 +278,31 @@ img {
   border-radius: 30px;
   margin-right: 20px;
 }
+@media screen and (max-width: 960px) {
+  .smart__regblock button:nth-child(1) {
+    width: 80px;
+    margin-right: 10px;
+    font-size: 0.9rem;
+  }
+}
 .smart__regblock button:nth-child(2) {
   width: 150px;
   border-radius: 30px;
   background-color: #201375;
   border: none;
+  transition: ease-in-out 0.5s;
+}
+@media screen and (max-width: 1400px) {
+  .smart__regblock button:nth-child(2) {
+    margin-right: 20px;
+    transition: ease-in-out 0.5s;
+  }
+}
+@media screen and (max-width: 960px) {
+  .smart__regblock button:nth-child(2) {
+    width: 100px;
+    margin-right: 10px;
+  }
 }
 .smart__textdescblock {
   display: flex;
