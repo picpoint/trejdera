@@ -394,7 +394,6 @@ img {
   }
 }
 .smart__textdescblock {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -415,7 +414,6 @@ img {
   }
 }
 .smart__textdescblock span {
-  border: 1px solid red;
   align-self: center;
   width: 50%;
   color: white;
@@ -458,12 +456,38 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 65px;
-  margin-right: 100px;
+  width: 100%;
+  margin: 65px 100px 0 0;
+  transition: ease-in-out 0.5s;
+}
+@media screen and (max-width: 720px) {
+  .smart__watch {
+    margin: 0;
+    transition: ease-in-out 0.5s;
+  }
+}
+@media screen and (max-width: 540px) {
+  .smart__watch {
+    flex-direction: column;
+    transition: ease-in-out 0.5s;
+  }
 }
 .smart__watch span {
   color: white;
   font-family: 'Sulphur Point', sans-serif;
+  transition: ease-in-out 0.5s;
+}
+@media screen and (max-width: 540px) {
+  .smart__watch span {
+    font-size: 1.3rem;
+    transition: ease-in-out 0.5s;
+  }
+}
+@media screen and (max-width: 480px) {
+  .smart__watch span {
+    font-size: 1rem;
+    transition: ease-in-out 0.5s;
+  }
 }
 .smart__watch button {
   background: none;
@@ -477,17 +501,49 @@ img {
   width: 105px;
   outline: none;
   cursor: pointer;
+  transition: ease-in-out 0.5s;
+}
+@media screen and (max-width: 1400px) {
+  .smart__watch button {
+    margin: 0 50px;
+    transition: ease-in-out 0.5s;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .smart__watch button {
+    margin: 0 30px;
+    transition: ease-in-out 0.5s;
+  }
+}
+@media screen and (max-width: 720px) {
+  .smart__watch button {
+    height: 80px;
+    width: 80px;
+    transition: ease-in-out 0.5s;
+  }
+}
+@media screen and (max-width: 540px) {
+  .smart__watch button {
+    margin: 20px 0;
+  }
 }
 .smart__phone {
   display: flex;
   justify-content: center;
 }
 .smart__tel {
+  border: 1px solid red;
   display: flex;
   justify-content: center;
   margin-bottom: -250px;
 }
+@media screen and (max-width: 1400px) {
+  .smart__tel {
+    width: 75%;
+  }
+}
 .smart__tel img {
+  border: 1px solid red;
   position: relative;
   bottom: 35px;
   left: 43%;
@@ -495,19 +551,37 @@ img {
   width: 100%;
 }
 .smart__bitcoin {
+  border: 1px solid red;
   position: relative;
   left: -120px;
   height: 220px;
   bottom: -10px;
+  transition: ease-in-out 0.5s;
+}
+@media screen and (max-width: 1600px) {
+  .smart__bitcoin {
+    left: -100px;
+    bottom: 10px;
+    width: 450px;
+    transition: ease-in-out 0.5s;
+  }
 }
 .smart__bitcoin img {
   height: 100%;
+  transition: ease-in-out 0.5s;
 }
 .smart__ethereum {
   position: relative;
-  left: -530px;
+  left: -500px;
   height: 220px;
   bottom: -180px;
+  transition: ease-in-out 0.5s;
+}
+@media screen and (max-width: 1600px) {
+  .smart__ethereum {
+    left: -380px;
+    transition: ease-in-out 0.5s;
+  }
 }
 .smart__ethereum img {
   height: 100%;

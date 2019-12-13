@@ -19,6 +19,10 @@ const smartGrigConf = {
       width: '1800px',
       fields: '30px'
     },
+    gxl: {
+      width: '1600px',
+      fields: '30px'
+    },
     xxl: {
       width: '1400px',
       fields: '30px'

@@ -245,7 +245,7 @@
   }
   
   &__textdescblock {
-    border: @border;
+    //border: @border;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;    
@@ -261,7 +261,7 @@
       transition: @transition;
     });
     span {
-      border: @border;
+      //border: @border;
       align-self: center;
       width: 50%;
       color: white;
@@ -297,14 +297,33 @@
     display: flex;
     justify-content: center;    
     align-items: center;
-    margin-top: 65px;
-    margin-right: 100px;
+    width: 100%;    
+    margin: 65px 100px 0 0;
+    transition: @transition;
+    .md-block({
+      margin: 0;
+      transition: @transition;
+    });
+    .sm-block({
+      flex-direction: column;
+      transition: @transition;
+    });
     span {
       //border: @border;
       color: white;
       font-family: 'Sulphur Point', sans-serif;
+      transition: @transition;
+      .sm-block({
+        font-size: 1.3rem;
+        transition: @transition;
+      });
+      .xs-block({
+        font-size: 1rem;
+        transition: @transition;
+      });
     }
     button {
+      //border: @border;
       background: none;
       background-image: url("/pict/btnplay.png");            
       background-position: center;
@@ -316,6 +335,23 @@
       width: 105px;
       outline: none;
       cursor: pointer;
+      transition: @transition;
+      .xxl-block({
+        margin: 0 50px;
+        transition: @transition;
+      });
+      .xl-block({
+        margin: 0 30px;
+        transition: @transition;
+      });      
+      .md-block({
+        height: 80px;
+        width: 80px;
+        transition: @transition;
+      });
+      .sm-block({
+        margin: 20px 0;
+      });
     }
   }
 
@@ -325,11 +361,15 @@
     justify-content: center;
   }
   &__tel {
-    //border: @border;
+    border: @border;
     display: flex;    
     justify-content: center;
     margin-bottom: -250px;
+    .xxl-block({
+      width: 75%;
+    });
     img {
+      border: @border;
       position: relative;
       bottom: 35px;
       left: 43%;
@@ -338,21 +378,34 @@
     }
   }
   &__bitcoin {
-    //border: @border;
+    border: @border;
     position: relative;
     left: -120px;    
     height: 220px;
-    bottom: -10px;
+    bottom: -10px;    
+    transition: @transition;
+    .gxl-block({
+      left: -100px;
+      bottom: 10px;
+      width: 450px;
+      transition: @transition;
+    });
     img {
-      height: 100%;                  
+      height: 100%;           
+      transition: @transition;             
     }
   }
   &__ethereum {
     //border: @border;
     position: relative;
-    left: -530px;    
+    left: -500px;    
     height: 220px;
     bottom: -180px;
+    transition: @transition;
+    .gxl-block({
+      left: -380px;
+      transition: @transition;
+    });
     img {
       height: 100%;                  
     }

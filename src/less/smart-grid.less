@@ -2,6 +2,7 @@
 @atom: (100% / @columns);
 
 @break_mgxl: 1800px;
+@break_gxl: 1600px;
 @break_xxl: 1400px;
 @break_xl: 1140px;
 @break_lg: 960px;
@@ -11,6 +12,7 @@
 
 @offset: 30px;
 @offset_mgxl: @offset;
+@offset_gxl: @offset;
 @offset_xxl: @offset;
 @offset_xl: @offset;
 @offset_lg: @offset;
@@ -20,6 +22,7 @@
 
 @offset_one_side: (@offset / 2);
 @offset_mgxl_one_side: (@offset_mgxl / 2);
+@offset_gxl_one_side: (@offset_gxl / 2);
 @offset_xxl_one_side: (@offset_xxl / 2);
 @offset_xl_one_side: (@offset_xl / 2);
 @offset_lg_one_side: (@offset_lg / 2);
@@ -29,6 +32,7 @@
 
 @fields: 30px;
 @fields_mgxl: 30px;
+@fields_gxl: 30px;
 @fields_xxl: 30px;
 @fields_xl: 30px;
 @fields_lg: 30px;
@@ -43,6 +47,11 @@
     .mgxl-block({
         padding-left: @fields_mgxl;
         padding-right: @fields_mgxl;
+    });
+
+    .gxl-block({
+        padding-left: @fields_gxl;
+        padding-right: @fields_gxl;
     });
 
     .xxl-block({
@@ -137,6 +146,11 @@
     .mgxl(width, ~"calc(@{val} - @{offset_mgxl})");
 }
 
+.size-gxl(@n){
+    @val: 100% / @columns * @n;
+    .gxl(width, ~"calc(@{val} - @{offset_gxl})");
+}
+
 .size-xxl(@n){
     @val: 100% / @columns * @n;
     .xxl(width, ~"calc(@{val} - @{offset_xxl})");
@@ -229,6 +243,38 @@
 .shift-mgxl-padding-right(@n){
     @val: 100% / @columns * @n;
     .mgxl(padding-right, ~"calc(@{val} + @{offset_mgxl_one_side})");
+}
+
+.shift-gxl(@n){
+    @val: 100% / @columns * @n;
+    .gxl(margin-left, ~"calc(@{val} + @{offset_gxl_one_side})");
+    .gxl(margin-right, ~"calc(@{val} + @{offset_gxl_one_side})");
+}
+
+.shift-gxl-left(@n){
+    @val: 100% / @columns * @n;
+    .gxl(margin-left, ~"calc(@{val} + @{offset_gxl_one_side})");
+}
+
+.shift-gxl-right(@n){
+    @val: 100% / @columns * @n;
+    .gxl(margin-right, ~"calc(@{val} + @{offset_gxl_one_side})");
+}
+
+.shift-gxl-padding(@n){
+    @val: 100% / @columns * @n;
+    .gxl(padding-left, ~"calc(@{val} + @{offset_gxl_one_side})");
+    .gxl(padding-right, ~"calc(@{val} + @{offset_gxl_one_side})");
+}
+
+.shift-gxl-padding-left(@n){
+    @val: 100% / @columns * @n;
+    .gxl(padding-left, ~"calc(@{val} + @{offset_gxl_one_side})");
+}
+
+.shift-gxl-padding-right(@n){
+    @val: 100% / @columns * @n;
+    .gxl(padding-right, ~"calc(@{val} + @{offset_gxl_one_side})");
 }
 
 .shift-xxl(@n){
@@ -431,6 +477,18 @@
 
 .mgxl-block(@content){
     @media screen and (max-width: @break_mgxl){
+        @content();
+    }
+}
+
+.gxl(@name, @value){
+    @media screen and (max-width: @break_gxl){
+        @{name}: @value;
+    }
+}
+
+.gxl-block(@content){
+    @media screen and (max-width: @break_gxl){
         @content();
     }
 }
