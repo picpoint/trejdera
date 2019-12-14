@@ -365,8 +365,20 @@
     display: flex;    
     justify-content: center;
     margin-bottom: -250px;
+    transition: @transition;
     .xxl-block({
-      width: 75%;
+      width: 85%;
+      transition: @transition;
+    });
+    .xl-block({
+      width: 100%;
+      margin-top: 30px;
+    });
+    .lg-block({      
+      width: 250%;
+    });
+    .md-block({      
+      width: 500%;
     });
     img {
       border: @border;
@@ -374,7 +386,17 @@
       bottom: 35px;
       left: 43%;
       height: 100%;
-      width: 100%;
+      width: 100%;            
+      transition: @transition;
+      .lg-block({
+        left: 45%;        
+        transition: @transition;
+      });
+      .md-block({
+        left: 30%;
+        //height: 100%;
+        //width: 500px;
+      });
     }
   }
   &__bitcoin {
@@ -390,21 +412,63 @@
       width: 450px;
       transition: @transition;
     });
+    .xxl-block({
+      height: 200px;
+      transition: @transition;
+    });
+    .xl-block({
+      height: 180px;
+      transition: @transition;
+    });
+    .lg-block({
+      height: 150px;
+      width: 920px;
+      left: -5%;
+      bottom: 1px;
+    });
+    .md-block({
+      height: 150px;
+      width: 200%;
+      left: -17%;
+      bottom: -5px;
+    });
     img {
       height: 100%;           
       transition: @transition;             
     }
   }
   &__ethereum {
-    //border: @border;
+    border: @border;
     position: relative;
     left: -500px;    
     height: 220px;
     bottom: -180px;
     transition: @transition;
     .gxl-block({
-      left: -380px;
+      left: -450px;
+      width: 450px;
+      bottom: -130px;
       transition: @transition;
+    });
+    .xxl-block({
+      height: 220px;
+    });
+    .xl-block({
+      height: 180px;
+      left: -400px;
+      transition: @transition;
+    });
+    .lg-block({
+      height: 150px;
+      width: 920px;
+      left: -30%;
+      bottom: -130px;
+    });
+    .md-block({
+      height: 100px;
+      width: 120%;
+      left: -300px;
+      bottom: -70px;
     });
     img {
       height: 100%;                  

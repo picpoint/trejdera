@@ -536,10 +536,28 @@ img {
   display: flex;
   justify-content: center;
   margin-bottom: -250px;
+  transition: ease-in-out 0.5s;
 }
 @media screen and (max-width: 1400px) {
   .smart__tel {
-    width: 75%;
+    width: 85%;
+    transition: ease-in-out 0.5s;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .smart__tel {
+    width: 100%;
+    margin-top: 30px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .smart__tel {
+    width: 250%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .smart__tel {
+    width: 500%;
   }
 }
 .smart__tel img {
@@ -549,6 +567,18 @@ img {
   left: 43%;
   height: 100%;
   width: 100%;
+  transition: ease-in-out 0.5s;
+}
+@media screen and (max-width: 960px) {
+  .smart__tel img {
+    left: 45%;
+    transition: ease-in-out 0.5s;
+  }
+}
+@media screen and (max-width: 720px) {
+  .smart__tel img {
+    left: 30%;
+  }
 }
 .smart__bitcoin {
   border: 1px solid red;
@@ -566,11 +596,40 @@ img {
     transition: ease-in-out 0.5s;
   }
 }
+@media screen and (max-width: 1400px) {
+  .smart__bitcoin {
+    height: 200px;
+    transition: ease-in-out 0.5s;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .smart__bitcoin {
+    height: 180px;
+    transition: ease-in-out 0.5s;
+  }
+}
+@media screen and (max-width: 960px) {
+  .smart__bitcoin {
+    height: 150px;
+    width: 920px;
+    left: -5%;
+    bottom: 1px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .smart__bitcoin {
+    height: 150px;
+    width: 200%;
+    left: -17%;
+    bottom: -5px;
+  }
+}
 .smart__bitcoin img {
   height: 100%;
   transition: ease-in-out 0.5s;
 }
 .smart__ethereum {
+  border: 1px solid red;
   position: relative;
   left: -500px;
   height: 220px;
@@ -579,8 +638,38 @@ img {
 }
 @media screen and (max-width: 1600px) {
   .smart__ethereum {
-    left: -380px;
+    left: -450px;
+    width: 450px;
+    bottom: -130px;
     transition: ease-in-out 0.5s;
+  }
+}
+@media screen and (max-width: 1400px) {
+  .smart__ethereum {
+    height: 220px;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .smart__ethereum {
+    height: 180px;
+    left: -400px;
+    transition: ease-in-out 0.5s;
+  }
+}
+@media screen and (max-width: 960px) {
+  .smart__ethereum {
+    height: 150px;
+    width: 920px;
+    left: -30%;
+    bottom: -130px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .smart__ethereum {
+    height: 100px;
+    width: 120%;
+    left: -300px;
+    bottom: -70px;
   }
 }
 .smart__ethereum img {
