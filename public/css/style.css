@@ -569,6 +569,17 @@ img {
   width: 100%;
   transition: ease-in-out 0.5s;
 }
+@media screen and (max-width: 1400px) {
+  .smart__tel img {
+    height: 90%;
+    bottom: 10px;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .smart__tel img {
+    width: 150%;
+  }
+}
 @media screen and (max-width: 960px) {
   .smart__tel img {
     left: 45%;
@@ -578,10 +589,10 @@ img {
 @media screen and (max-width: 720px) {
   .smart__tel img {
     left: 30%;
+    transition: ease-in-out 0.5s;
   }
 }
 .smart__bitcoin {
-  border: 1px solid red;
   position: relative;
   left: -120px;
   height: 220px;
@@ -629,7 +640,6 @@ img {
   transition: ease-in-out 0.5s;
 }
 .smart__ethereum {
-  border: 1px solid red;
   position: relative;
   left: -500px;
   height: 220px;

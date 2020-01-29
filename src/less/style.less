@@ -388,19 +388,25 @@
       height: 100%;
       width: 100%;            
       transition: @transition;
+      .xxl-block({
+        height: 90%;
+        bottom: 10px;
+      });
+      .xl-block({
+        width: 150%;        
+      });
       .lg-block({
         left: 45%;        
         transition: @transition;
       });
       .md-block({
         left: 30%;
-        //height: 100%;
-        //width: 500px;
+        transition: @transition;        
       });
     }
   }
   &__bitcoin {
-    border: @border;
+    //border: @border;
     position: relative;
     left: -120px;    
     height: 220px;
@@ -438,7 +444,7 @@
     }
   }
   &__ethereum {
-    border: @border;
+    //border: @border;
     position: relative;
     left: -500px;    
     height: 220px;
