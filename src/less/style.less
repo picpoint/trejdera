@@ -4,11 +4,12 @@
 
 .reset();
 
+
+// SECTION SMART START
 .smart {        
   //border: @border;
   display: flex;
-  justify-content: center;
-  //height: 1080px;
+  justify-content: center;  
   background-image: url("/pict/bkg1.png");  
   background-size: cover;
   background-position: center;  
@@ -309,10 +310,10 @@
       transition: @transition;
     });
     span {
-      //border: @border;
+      border: @border;
       color: white;
       font-family: 'Sulphur Point', sans-serif;
-      transition: @transition;
+      transition: @transition;            
       .sm-block({
         font-size: 1.3rem;
         transition: @transition;
@@ -320,8 +321,8 @@
       .xs-block({
         font-size: 1rem;
         transition: @transition;
-      });
-    }
+      });      
+    }    
     button {
       //border: @border;
       background: none;
@@ -361,9 +362,9 @@
     justify-content: center;
   }
   &__tel {
-    border: @border;
+    //border: @border;
     display: flex;    
-    justify-content: center;
+    justify-content: center;    
     margin-bottom: -250px;
     transition: @transition;
     .xxl-block({
@@ -375,13 +376,16 @@
       margin-top: 30px;
     });
     .lg-block({      
-      width: 250%;
+      width: 300%;      
     });
     .md-block({      
-      width: 500%;
+      width: 500%;      
+    });
+    .sm-block({
+      display: none;
     });
     img {
-      border: @border;
+      //border: @border;
       position: relative;
       bottom: 35px;
       left: 43%;
@@ -393,20 +397,22 @@
         bottom: 10px;
       });
       .xl-block({
-        width: 150%;        
+        //width: 150%;        
       });
       .lg-block({
-        left: 45%;        
+        left: 40%;                
+        height: 85%;
         transition: @transition;
       });
       .md-block({
         left: 30%;
+        height: 70%;
         transition: @transition;        
       });
     }
   }
   &__bitcoin {
-    //border: @border;
+    //border: @border;    
     position: relative;
     left: -120px;    
     height: 220px;
@@ -419,24 +425,28 @@
       transition: @transition;
     });
     .xxl-block({
-      height: 200px;
+      height: 180px;      
       transition: @transition;
     });
     .xl-block({
-      height: 180px;
+      height: 150px;
+      bottom: -30px;
       transition: @transition;
     });
-    .lg-block({
-      height: 150px;
+    .lg-block({      
+      height: 120px;
       width: 920px;
-      left: -5%;
-      bottom: 1px;
+      left: -10%;
+      bottom: -30px;
     });
     .md-block({
-      height: 150px;
+      height: 100px;
       width: 200%;
       left: -17%;
       bottom: -5px;
+    });
+    .sm-block({
+      display: none;
     });
     img {
       height: 100%;           
@@ -444,7 +454,7 @@
     }
   }
   &__ethereum {
-    //border: @border;
+    //border: @border;    
     position: relative;
     left: -500px;    
     height: 220px;
@@ -457,24 +467,28 @@
       transition: @transition;
     });
     .xxl-block({
-      height: 220px;
+      height: 180px;
+      width: 450px;
     });
     .xl-block({
-      height: 180px;
+      height: 150px;
       left: -400px;
       transition: @transition;
     });
     .lg-block({
-      height: 150px;
+      height: 120px;
       width: 920px;
-      left: -30%;
+      left: -35%;
       bottom: -130px;
     });
-    .md-block({
+    .md-block({      
       height: 100px;
-      width: 120%;
-      left: -300px;
-      bottom: -70px;
+      width: 200%;
+      left: -37%;
+      bottom: -100px;
+    });    
+    .sm-block({
+      display: none;
     });
     img {
       height: 100%;                  
@@ -482,3 +496,21 @@
   }
 
 }
+// SECTION SMART END
+
+// -----------------
+
+// SECTION CCP START
+.ccp {
+  border: @border;    
+  display: flex;
+  &__wrapper {     
+    
+  }
+  &__hdrtext {
+    font-size: 3rem;
+    color: black;
+  }
+}
+// SECTION CCP END
+

@@ -473,6 +473,7 @@ img {
   }
 }
 .smart__watch span {
+  border: 1px solid red;
   color: white;
   font-family: 'Sulphur Point', sans-serif;
   transition: ease-in-out 0.5s;
@@ -532,7 +533,6 @@ img {
   justify-content: center;
 }
 .smart__tel {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   margin-bottom: -250px;
@@ -552,7 +552,7 @@ img {
 }
 @media screen and (max-width: 960px) {
   .smart__tel {
-    width: 250%;
+    width: 300%;
   }
 }
 @media screen and (max-width: 720px) {
@@ -560,8 +560,12 @@ img {
     width: 500%;
   }
 }
+@media screen and (max-width: 540px) {
+  .smart__tel {
+    display: none;
+  }
+}
 .smart__tel img {
-  border: 1px solid red;
   position: relative;
   bottom: 35px;
   left: 43%;
@@ -576,19 +580,18 @@ img {
   }
 }
 @media screen and (max-width: 1140px) {
-  .smart__tel img {
-    width: 150%;
-  }
 }
 @media screen and (max-width: 960px) {
   .smart__tel img {
-    left: 45%;
+    left: 40%;
+    height: 85%;
     transition: ease-in-out 0.5s;
   }
 }
 @media screen and (max-width: 720px) {
   .smart__tel img {
     left: 30%;
+    height: 70%;
     transition: ease-in-out 0.5s;
   }
 }
@@ -609,30 +612,36 @@ img {
 }
 @media screen and (max-width: 1400px) {
   .smart__bitcoin {
-    height: 200px;
+    height: 180px;
     transition: ease-in-out 0.5s;
   }
 }
 @media screen and (max-width: 1140px) {
   .smart__bitcoin {
-    height: 180px;
+    height: 150px;
+    bottom: -30px;
     transition: ease-in-out 0.5s;
   }
 }
 @media screen and (max-width: 960px) {
   .smart__bitcoin {
-    height: 150px;
+    height: 120px;
     width: 920px;
-    left: -5%;
-    bottom: 1px;
+    left: -10%;
+    bottom: -30px;
   }
 }
 @media screen and (max-width: 720px) {
   .smart__bitcoin {
-    height: 150px;
+    height: 100px;
     width: 200%;
     left: -17%;
     bottom: -5px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .smart__bitcoin {
+    display: none;
   }
 }
 .smart__bitcoin img {
@@ -656,32 +665,46 @@ img {
 }
 @media screen and (max-width: 1400px) {
   .smart__ethereum {
-    height: 220px;
+    height: 180px;
+    width: 450px;
   }
 }
 @media screen and (max-width: 1140px) {
   .smart__ethereum {
-    height: 180px;
+    height: 150px;
     left: -400px;
     transition: ease-in-out 0.5s;
   }
 }
 @media screen and (max-width: 960px) {
   .smart__ethereum {
-    height: 150px;
+    height: 120px;
     width: 920px;
-    left: -30%;
+    left: -35%;
     bottom: -130px;
   }
 }
 @media screen and (max-width: 720px) {
   .smart__ethereum {
     height: 100px;
-    width: 120%;
-    left: -300px;
-    bottom: -70px;
+    width: 200%;
+    left: -37%;
+    bottom: -100px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .smart__ethereum {
+    display: none;
   }
 }
 .smart__ethereum img {
   height: 100%;
+}
+.ccp {
+  border: 1px solid red;
+  display: flex;
+}
+.ccp__hdrtext {
+  font-size: 3rem;
+  color: black;
 }
