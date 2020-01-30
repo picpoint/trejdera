@@ -473,7 +473,6 @@ img {
   }
 }
 .smart__watch span {
-  border: 1px solid red;
   color: white;
   font-family: 'Sulphur Point', sans-serif;
   transition: ease-in-out 0.5s;
@@ -526,6 +525,11 @@ img {
 @media screen and (max-width: 540px) {
   .smart__watch button {
     margin: 20px 0;
+  }
+}
+@media screen and (max-width: 540px) {
+  .smart__wnow {
+    margin-bottom: 50px;
   }
 }
 .smart__phone {
@@ -701,8 +705,10 @@ img {
   height: 100%;
 }
 .ccp {
-  border: 1px solid red;
   display: flex;
+}
+.ccp__wrapper {
+  border: 1px solid red;
 }
 .ccp__hdrtext {
   font-size: 3rem;

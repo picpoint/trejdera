@@ -306,23 +306,23 @@
       transition: @transition;
     });
     .sm-block({
-      flex-direction: column;
+      flex-direction: column;      
       transition: @transition;
     });
     span {
-      border: @border;
+      //border: @border;
       color: white;
       font-family: 'Sulphur Point', sans-serif;
-      transition: @transition;            
+      transition: @transition;                  
       .sm-block({
-        font-size: 1.3rem;
+        font-size: 1.3rem;        
         transition: @transition;
       });
       .xs-block({
         font-size: 1rem;
         transition: @transition;
       });      
-    }    
+    }        
     button {
       //border: @border;
       background: none;
@@ -354,6 +354,11 @@
         margin: 20px 0;
       });
     }
+  }
+  &__wnow {
+    .sm-block({
+      margin-bottom: 50px;
+    });    
   }
 
   &__phone {
@@ -501,11 +506,10 @@
 // -----------------
 
 // SECTION CCP START
-.ccp {
-  border: @border;    
+.ccp {  
   display: flex;
   &__wrapper {     
-    
+    border: @border;
   }
   &__hdrtext {
     font-size: 3rem;
