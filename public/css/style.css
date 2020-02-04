@@ -99,6 +99,13 @@ img {
   max-width: 100%;
   height: auto;
 }
+.mixincards {
+  border: 1px solid red;
+  border-radius: 5px;
+  height: 350px;
+  width: 270px;
+  margin: 50px 14px 60px 14px;
+}
 .smart {
   display: flex;
   justify-content: center;
@@ -704,13 +711,89 @@ img {
 .smart__ethereum img {
   height: 100%;
 }
-.ccp {
-  display: flex;
-}
 .ccp__wrapper {
   border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Sulphur Point', sans-serif;
 }
 .ccp__hdrtext {
-  font-size: 3rem;
-  color: black;
+  align-self: center;
+  font-size: 2.5rem;
+  margin-top: 320px;
+  color: #272637;
+}
+.ccp__hdrtext h2 {
+  font-weight: bolder;
+}
+.ccp__textdescr {
+  border: 1px solid red;
+  width: 40%;
+  align-self: center;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #9a9697;
+}
+.ccp__cardsblock {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+}
+.ccp__cardsbitcoin {
+  border: 1px solid red;
+  border-radius: 5px;
+  height: 350px;
+  width: 270px;
+  margin: 50px 14px 60px 14px;
+  display: flex;
+  flex-direction: column;
+}
+.ccp__cardsbitcoinlogo {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 20%;
+  background-color: #292a3c;
+}
+.ccp__cardsbitcoinlogo img {
+  position: relative;
+  top: 30px;
+  height: 70px;
+  width: 70px;
+}
+.ccp__cardsbitcoininfo {
+  border: 1px solid red;
+  display: flex;
+  height: 70%;
+  background-color: #272637;
+}
+.ccp__cardsbitcoinprice {
+  border: 1px solid red;
+  height: 20px;
+  width: 100%;
+}
+.ccp__cardsethereum {
+  border: 1px solid red;
+  border-radius: 5px;
+  height: 350px;
+  width: 270px;
+  margin: 50px 14px 60px 14px;
+}
+.ccp__cardsripple {
+  border: 1px solid red;
+  border-radius: 5px;
+  height: 350px;
+  width: 270px;
+  margin: 50px 14px 60px 14px;
+}
+.ccp__cardscardano {
+  border: 1px solid red;
+  border-radius: 5px;
+  height: 350px;
+  width: 270px;
+  margin: 50px 14px 60px 14px;
 }
