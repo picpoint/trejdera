@@ -7,7 +7,7 @@
 
 // MIXINS BLOCK START
 .mixincards {
-  border: @border;
+  //border: @border;
   border-radius: 5px;
   height: 350px;
   width: 270px;
@@ -534,7 +534,7 @@
     }
   }
   &__textdescr {
-    border: @border;
+    //border: @border;
     width: 40%;
     align-self: center;
     text-align: center;
@@ -543,7 +543,7 @@
     color: @colorlightgray;
   }
   &__cardsblock {
-    border: @border;    
+    //border: @border;    
     display: flex;
     justify-content: center;
   }
@@ -553,7 +553,7 @@
     flex-direction: column;    
   }
   &__cardsbitcoinlogo {
-    border: @border;
+    //border: @border;
     display: flex;
     flex-direction: column-reverse;    
     align-items: center;
@@ -569,15 +569,88 @@
     }
   }
   &__cardsbitcoininfo {
-    border: @border;
+    //border: @border;
     display: flex;    
+    flex-direction: column;        
+    align-items: center;
     height: 70%;
     background-color: @colorverydarkblue;        
   }
   &__cardsbitcoinprice {
-    border: @border;
+    //border: @border;
+    display: flex;
+    justify-content: space-between;        
     height: 20px;
-    width: 100%;
+    width: 80%;
+    margin-top: 40px;    
+    span {
+      color: white;      
+    }
+  }
+  &__cardsbitcoingain {
+    //border: @border;
+    display: flex;
+    justify-content: space-between;            
+    align-items: center;
+    height: 20px;
+    width: 80%;    
+    span {
+      color: @colorlightgray;     
+      font-size: 0.7rem;
+      &:nth-child(2) {
+        color: @colorred;
+      }
+    }
+  }
+  &__cardsbitcoingrapf {
+    //border: @border;
+    height: 90px;
+    width: 80%;
+  }
+  &__cardsbitcointimestapm {     
+    //border: @border;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    width: 80%;    
+    margin-top: 20px;
+    button {
+      background-color: @colordarkblue;
+      border-radius: 15px;
+      border: none;
+      outline: none;
+      color: white;      
+      &:hover {
+        background-color: @colorbluegray;
+        cursor: pointer;
+        height: 80%;
+      }
+    }
+  }
+  &__cardsbitcoinfooter {
+    //border: @border;
+    display: flex;
+    justify-content: center;
+    background-color: @colordarkblue;    
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 10%;
+  }
+  &__cardsbitcoinvolume {
+    //border: @border;
+    display: flex;
+    justify-content: space-between;        
+    align-items: center;
+    width: 80%;    
+    height: 100%;
+    span {
+      color: @colorlightgray;
+      font-size: 0.8rem;
+      &:nth-child(2) {
+        color: white;
+      }
+    }
   }
 
 

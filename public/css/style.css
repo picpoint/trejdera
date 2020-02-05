@@ -100,7 +100,6 @@ img {
   height: auto;
 }
 .mixincards {
-  border: 1px solid red;
   border-radius: 5px;
   height: 350px;
   width: 270px;
@@ -727,7 +726,6 @@ img {
   font-weight: bolder;
 }
 .ccp__textdescr {
-  border: 1px solid red;
   width: 40%;
   align-self: center;
   text-align: center;
@@ -736,12 +734,10 @@ img {
   color: #9a9697;
 }
 .ccp__cardsblock {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
 }
 .ccp__cardsbitcoin {
-  border: 1px solid red;
   border-radius: 5px;
   height: 350px;
   width: 270px;
@@ -750,7 +746,6 @@ img {
   flex-direction: column;
 }
 .ccp__cardsbitcoinlogo {
-  border: 1px solid red;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -766,32 +761,95 @@ img {
   width: 70px;
 }
 .ccp__cardsbitcoininfo {
-  border: 1px solid red;
   display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 70%;
   background-color: #272637;
 }
 .ccp__cardsbitcoinprice {
-  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
   height: 20px;
-  width: 100%;
+  width: 80%;
+  margin-top: 40px;
+}
+.ccp__cardsbitcoinprice span {
+  color: white;
+}
+.ccp__cardsbitcoingain {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
+  width: 80%;
+}
+.ccp__cardsbitcoingain span {
+  color: #9a9697;
+  font-size: 0.7rem;
+}
+.ccp__cardsbitcoingain span:nth-child(2) {
+  color: #b92c34;
+}
+.ccp__cardsbitcoingrapf {
+  height: 90px;
+  width: 80%;
+}
+.ccp__cardsbitcointimestapm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  width: 80%;
+  margin-top: 20px;
+}
+.ccp__cardsbitcointimestapm button {
+  background-color: #292a3c;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  color: white;
+}
+.ccp__cardsbitcointimestapm button:hover {
+  background-color: #3a3a52;
+  cursor: pointer;
+  height: 80%;
+}
+.ccp__cardsbitcoinfooter {
+  display: flex;
+  justify-content: center;
+  background-color: #292a3c;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 10%;
+}
+.ccp__cardsbitcoinvolume {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+}
+.ccp__cardsbitcoinvolume span {
+  color: #9a9697;
+  font-size: 0.8rem;
+}
+.ccp__cardsbitcoinvolume span:nth-child(2) {
+  color: white;
 }
 .ccp__cardsethereum {
-  border: 1px solid red;
   border-radius: 5px;
   height: 350px;
   width: 270px;
   margin: 50px 14px 60px 14px;
 }
 .ccp__cardsripple {
-  border: 1px solid red;
   border-radius: 5px;
   height: 350px;
   width: 270px;
   margin: 50px 14px 60px 14px;
 }
 .ccp__cardscardano {
-  border: 1px solid red;
   border-radius: 5px;
   height: 350px;
   width: 270px;
