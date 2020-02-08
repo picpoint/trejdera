@@ -40,7 +40,87 @@
   background-color: @colorverydarkblue;        
 }
 
+.mixincardsprice {
+  border: @border;
+  display: flex;
+  justify-content: space-between;        
+  height: 20px;
+  width: 80%;
+  margin-top: 40px;    
+  span {
+    color: white;      
+  }
+}
 
+.mixincardsgain {
+  border: @border;
+  display: flex;
+  justify-content: space-between;            
+  align-items: center;
+  height: 20px;
+  width: 80%;    
+  span {
+    color: @colorlightgray;     
+    font-size: 0.7rem;
+    &:nth-child(2) {
+      color: @colorred;
+    }
+  }
+}
+
+.mixincardsgraph {
+  border: @border;
+  height: 90px;
+  width: 80%;
+}
+
+.mixincardstimestamp {
+  //border: @border;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  width: 80%;    
+  margin-top: 20px;
+  button {
+    background-color: @colordarkblue;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    color: white;      
+    &:hover {
+      background-color: @colorbluegray;
+      cursor: pointer;
+      height: 80%;
+    }
+  }
+}
+
+.mixincardsfooter {
+  border: @border;
+  display: flex;
+  justify-content: center;
+  background-color: @colordarkblue;    
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 10%;
+}
+
+.mixincardsvolume {
+  border: @border;
+  display: flex;
+  justify-content: space-between;        
+  align-items: center;
+  width: 80%;    
+  height: 100%;
+  span {
+    color: @colorlightgray;
+    font-size: 0.8rem;
+    &:nth-child(2) {
+      color: white;
+    }
+  }
+}
 
 // MIXINS BLOCK END
 
@@ -585,84 +665,26 @@
   &__cardsbitcoinlogo {
     .mixincardslogos();
   }
-  &__cardsbitcoininfo { ///////////
+  &__cardsbitcoininfo {
     .mixincardsinfo();
   }
   &__cardsbitcoinprice {
-    //border: @border;
-    display: flex;
-    justify-content: space-between;        
-    height: 20px;
-    width: 80%;
-    margin-top: 40px;    
-    span {
-      color: white;      
-    }
+    .mixincardsprice();
   }
   &__cardsbitcoingain {
-    //border: @border;
-    display: flex;
-    justify-content: space-between;            
-    align-items: center;
-    height: 20px;
-    width: 80%;    
-    span {
-      color: @colorlightgray;     
-      font-size: 0.7rem;
-      &:nth-child(2) {
-        color: @colorred;
-      }
-    }
+    .mixincardsgain();
   }
   &__cardsbitcoingrapf {
-    //border: @border;
-    height: 90px;
-    width: 80%;
+    .mixincardsgraph();
   }
   &__cardsbitcointimestapm {     
-    //border: @border;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 30px;
-    width: 80%;    
-    margin-top: 20px;
-    button {
-      background-color: @colordarkblue;
-      border-radius: 15px;
-      border: none;
-      outline: none;
-      color: white;      
-      &:hover {
-        background-color: @colorbluegray;
-        cursor: pointer;
-        height: 80%;
-      }
-    }
+    .mixincardstimestamp();
   }
   &__cardsbitcoinfooter {
-    //border: @border;
-    display: flex;
-    justify-content: center;
-    background-color: @colordarkblue;    
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
-    height: 10%;
+    .mixincardsfooter();
   }
   &__cardsbitcoinvolume {
-    //border: @border;
-    display: flex;
-    justify-content: space-between;        
-    align-items: center;
-    width: 80%;    
-    height: 100%;
-    span {
-      color: @colorlightgray;
-      font-size: 0.8rem;
-      &:nth-child(2) {
-        color: white;
-      }
-    }
+    .mixincardsvolume();
   }
 
 
@@ -675,14 +697,74 @@
   &__cardsethereuminfo {
     .mixincardsinfo();
   }
+  &__cardsethereumprice {
+    .mixincardsprice();
+  }
+  &__cardsethereumgain {
+   .mixincardsgain(); 
+   span:nth-child(2) {
+     color: @colorgreen;
+   }
+  }
+  &__cardsethereumgrapf {
+    .mixincardsgraph();    
+  }
+  &__cardsethereumtimestapm {
+    .mixincardstimestamp();
+  }
+  &__cardsethereumfooter {
+    .mixincardsfooter();
+  }
+  &__cardsethereumvolume {
+    .mixincardsvolume();
+  }
 
 
 
   &__cardsripple {
     .mixincards();
   }
+  &__cardsripplelogo {
+    .mixincardslogos();
+  }
+  &__cardsrippleinfo {
+    .mixincardsinfo();
+  }
+  &__cardsrippleprice {
+    .mixincardsprice();
+  }
+  &__cardsripplegain {
+    .mixincardsgain();
+    span:nth-child(2) {
+      color: @colorgreen;
+    }
+  }
+  &__cardsripplegrapf {
+    .mixincardsgraph();
+  }
+  &__cardsrippletimestapm {
+    .mixincardstimestamp();
+  }
+  &__cardsripplefooter {
+    .mixincardsfooter();
+  }
+  &__cardsripplevolume {
+    .mixincardsvolume();
+  }
+
+
+
   &__cardscardano {
     .mixincards();
+  }
+  &__cardscardanologo {
+    .mixincardslogos();
+  }
+  &__cardscardanoinfo {
+    .mixincardsinfo();
+  }
+  &__cardscardanoprice {
+    .mixincardsprice();
   }
 }
 // SECTION CCP END

@@ -130,6 +130,81 @@ img {
   height: 70%;
   background-color: #272637;
 }
+.mixincardsprice {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  width: 80%;
+  margin-top: 40px;
+}
+.mixincardsprice span {
+  color: white;
+}
+.mixincardsgain {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
+  width: 80%;
+}
+.mixincardsgain span {
+  color: #9a9697;
+  font-size: 0.7rem;
+}
+.mixincardsgain span:nth-child(2) {
+  color: #b92c34;
+}
+.mixincardsgraph {
+  border: 1px solid red;
+  height: 90px;
+  width: 80%;
+}
+.mixincardstimestamp {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  width: 80%;
+  margin-top: 20px;
+}
+.mixincardstimestamp button {
+  background-color: #292a3c;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  color: white;
+}
+.mixincardstimestamp button:hover {
+  background-color: #3a3a52;
+  cursor: pointer;
+  height: 80%;
+}
+.mixincardsfooter {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  background-color: #292a3c;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 10%;
+}
+.mixincardsvolume {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+}
+.mixincardsvolume span {
+  color: #9a9697;
+  font-size: 0.8rem;
+}
+.mixincardsvolume span:nth-child(2) {
+  color: white;
+}
 .smart {
   display: flex;
   justify-content: center;
@@ -796,6 +871,7 @@ img {
   background-color: #272637;
 }
 .ccp__cardsbitcoinprice {
+  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   height: 20px;
@@ -806,6 +882,7 @@ img {
   color: white;
 }
 .ccp__cardsbitcoingain {
+  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -820,6 +897,7 @@ img {
   color: #b92c34;
 }
 .ccp__cardsbitcoingrapf {
+  border: 1px solid red;
   height: 90px;
   width: 80%;
 }
@@ -844,6 +922,7 @@ img {
   height: 80%;
 }
 .ccp__cardsbitcoinfooter {
+  border: 1px solid red;
   display: flex;
   justify-content: center;
   background-color: #292a3c;
@@ -852,6 +931,7 @@ img {
   height: 10%;
 }
 .ccp__cardsbitcoinvolume {
+  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -896,6 +976,84 @@ img {
   height: 70%;
   background-color: #272637;
 }
+.ccp__cardsethereumprice {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  width: 80%;
+  margin-top: 40px;
+}
+.ccp__cardsethereumprice span {
+  color: white;
+}
+.ccp__cardsethereumgain {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
+  width: 80%;
+}
+.ccp__cardsethereumgain span {
+  color: #9a9697;
+  font-size: 0.7rem;
+}
+.ccp__cardsethereumgain span:nth-child(2) {
+  color: #b92c34;
+}
+.ccp__cardsethereumgain span:nth-child(2) {
+  color: #5ed557;
+}
+.ccp__cardsethereumgrapf {
+  border: 1px solid red;
+  height: 90px;
+  width: 80%;
+}
+.ccp__cardsethereumtimestapm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  width: 80%;
+  margin-top: 20px;
+}
+.ccp__cardsethereumtimestapm button {
+  background-color: #292a3c;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  color: white;
+}
+.ccp__cardsethereumtimestapm button:hover {
+  background-color: #3a3a52;
+  cursor: pointer;
+  height: 80%;
+}
+.ccp__cardsethereumfooter {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  background-color: #292a3c;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 10%;
+}
+.ccp__cardsethereumvolume {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+}
+.ccp__cardsethereumvolume span {
+  color: #9a9697;
+  font-size: 0.8rem;
+}
+.ccp__cardsethereumvolume span:nth-child(2) {
+  color: white;
+}
 .ccp__cardsripple {
   border: 1px solid red;
   border-radius: 5px;
@@ -903,10 +1061,147 @@ img {
   width: 270px;
   margin: 50px 14px 60px 14px;
 }
+.ccp__cardsripplelogo {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 20%;
+  background-color: #292a3c;
+}
+.ccp__cardsripplelogo img {
+  position: relative;
+  top: 30px;
+  height: 70px;
+  width: 70px;
+}
+.ccp__cardsrippleinfo {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70%;
+  background-color: #272637;
+}
+.ccp__cardsrippleprice {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  width: 80%;
+  margin-top: 40px;
+}
+.ccp__cardsrippleprice span {
+  color: white;
+}
+.ccp__cardsripplegain {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
+  width: 80%;
+}
+.ccp__cardsripplegain span {
+  color: #9a9697;
+  font-size: 0.7rem;
+}
+.ccp__cardsripplegain span:nth-child(2) {
+  color: #b92c34;
+}
+.ccp__cardsripplegain span:nth-child(2) {
+  color: #5ed557;
+}
+.ccp__cardsripplegrapf {
+  border: 1px solid red;
+  height: 90px;
+  width: 80%;
+}
+.ccp__cardsrippletimestapm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  width: 80%;
+  margin-top: 20px;
+}
+.ccp__cardsrippletimestapm button {
+  background-color: #292a3c;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  color: white;
+}
+.ccp__cardsrippletimestapm button:hover {
+  background-color: #3a3a52;
+  cursor: pointer;
+  height: 80%;
+}
+.ccp__cardsripplefooter {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  background-color: #292a3c;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 10%;
+}
+.ccp__cardsripplevolume {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+}
+.ccp__cardsripplevolume span {
+  color: #9a9697;
+  font-size: 0.8rem;
+}
+.ccp__cardsripplevolume span:nth-child(2) {
+  color: white;
+}
 .ccp__cardscardano {
   border: 1px solid red;
   border-radius: 5px;
   height: 350px;
   width: 270px;
   margin: 50px 14px 60px 14px;
+}
+.ccp__cardscardanologo {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 20%;
+  background-color: #292a3c;
+}
+.ccp__cardscardanologo img {
+  position: relative;
+  top: 30px;
+  height: 70px;
+  width: 70px;
+}
+.ccp__cardscardanoinfo {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70%;
+  background-color: #272637;
+}
+.ccp__cardscardanoprice {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  height: 20px;
+  width: 80%;
+  margin-top: 40px;
+}
+.ccp__cardscardanoprice span {
+  color: white;
 }
