@@ -100,10 +100,35 @@ img {
   height: auto;
 }
 .mixincards {
+  border: 1px solid red;
   border-radius: 5px;
   height: 350px;
   width: 270px;
   margin: 50px 14px 60px 14px;
+}
+.mixincardslogos {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 20%;
+  background-color: #292a3c;
+}
+.mixincardslogos img {
+  position: relative;
+  top: 30px;
+  height: 70px;
+  width: 70px;
+}
+.mixincardsinfo {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70%;
+  background-color: #272637;
 }
 .smart {
   display: flex;
@@ -738,6 +763,7 @@ img {
   justify-content: center;
 }
 .ccp__cardsbitcoin {
+  border: 1px solid red;
   border-radius: 5px;
   height: 350px;
   width: 270px;
@@ -746,6 +772,7 @@ img {
   flex-direction: column;
 }
 .ccp__cardsbitcoinlogo {
+  border: 1px solid red;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -761,6 +788,7 @@ img {
   width: 70px;
 }
 .ccp__cardsbitcoininfo {
+  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -838,18 +866,45 @@ img {
   color: white;
 }
 .ccp__cardsethereum {
+  border: 1px solid red;
   border-radius: 5px;
   height: 350px;
   width: 270px;
   margin: 50px 14px 60px 14px;
 }
+.ccp__cardsethereumlogo {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 20%;
+  background-color: #292a3c;
+}
+.ccp__cardsethereumlogo img {
+  position: relative;
+  top: 30px;
+  height: 70px;
+  width: 70px;
+}
+.ccp__cardsethereuminfo {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 70%;
+  background-color: #272637;
+}
 .ccp__cardsripple {
+  border: 1px solid red;
   border-radius: 5px;
   height: 350px;
   width: 270px;
   margin: 50px 14px 60px 14px;
 }
 .ccp__cardscardano {
+  border: 1px solid red;
   border-radius: 5px;
   height: 350px;
   width: 270px;

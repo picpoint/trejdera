@@ -7,12 +7,41 @@
 
 // MIXINS BLOCK START
 .mixincards {
-  //border: @border;
+  border: @border;
   border-radius: 5px;
   height: 350px;
   width: 270px;
   margin: 50px 14px 60px 14px;
 }
+
+.mixincardslogos {
+  border: @border;
+  display: flex;
+  flex-direction: column-reverse;    
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 20%;
+  background-color: @colordarkblue;
+  img {
+    position: relative;
+    top: 30px;
+    height: 70px;
+    width: 70px;
+  }
+}
+
+.mixincardsinfo {
+  border: @border;
+  display: flex;    
+  flex-direction: column;        
+  align-items: center;
+  height: 70%;
+  background-color: @colorverydarkblue;        
+}
+
+
+
 // MIXINS BLOCK END
 
 // SECTION SMART START
@@ -549,32 +578,15 @@
   }
   &__cardsbitcoin {
     .mixincards();
+    //border: @border;
     display: flex;
     flex-direction: column;    
   }
   &__cardsbitcoinlogo {
-    //border: @border;
-    display: flex;
-    flex-direction: column-reverse;    
-    align-items: center;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    height: 20%;
-    background-color: @colordarkblue;
-    img {
-      position: relative;
-      top: 30px;
-      height: 70px;
-      width: 70px;
-    }
+    .mixincardslogos();
   }
-  &__cardsbitcoininfo {
-    //border: @border;
-    display: flex;    
-    flex-direction: column;        
-    align-items: center;
-    height: 70%;
-    background-color: @colorverydarkblue;        
+  &__cardsbitcoininfo { ///////////
+    .mixincardsinfo();
   }
   &__cardsbitcoinprice {
     //border: @border;
@@ -657,6 +669,15 @@
   &__cardsethereum {
     .mixincards();
   }
+  &__cardsethereumlogo {
+    .mixincardslogos();
+  }
+  &__cardsethereuminfo {
+    .mixincardsinfo();
+  }
+
+
+
   &__cardsripple {
     .mixincards();
   }
