@@ -154,7 +154,8 @@ img {
   font-size: 0.7rem;
 }
 .mixincardsgain span:nth-child(2) {
-  color: #b92c34;
+  color: #5da261;
+  font-weight: bolder;
 }
 .mixincardsgraph {
   border: 1px solid red;
@@ -894,6 +895,10 @@ img {
   font-size: 0.7rem;
 }
 .ccp__cardsbitcoingain span:nth-child(2) {
+  color: #5da261;
+  font-weight: bolder;
+}
+.ccp__cardsbitcoingain span:nth-child(2) {
   color: #b92c34;
 }
 .ccp__cardsbitcoingrapf {
@@ -1000,10 +1005,8 @@ img {
   font-size: 0.7rem;
 }
 .ccp__cardsethereumgain span:nth-child(2) {
-  color: #b92c34;
-}
-.ccp__cardsethereumgain span:nth-child(2) {
-  color: #5ed557;
+  color: #5da261;
+  font-weight: bolder;
 }
 .ccp__cardsethereumgrapf {
   border: 1px solid red;
@@ -1109,10 +1112,8 @@ img {
   font-size: 0.7rem;
 }
 .ccp__cardsripplegain span:nth-child(2) {
-  color: #b92c34;
-}
-.ccp__cardsripplegain span:nth-child(2) {
-  color: #5ed557;
+  color: #5da261;
+  font-weight: bolder;
 }
 .ccp__cardsripplegrapf {
   border: 1px solid red;
@@ -1203,5 +1204,70 @@ img {
   margin-top: 40px;
 }
 .ccp__cardscardanoprice span {
+  color: white;
+}
+.ccp__cardscardanogain {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 20px;
+  width: 80%;
+}
+.ccp__cardscardanogain span {
+  color: #9a9697;
+  font-size: 0.7rem;
+}
+.ccp__cardscardanogain span:nth-child(2) {
+  color: #5da261;
+  font-weight: bolder;
+}
+.ccp__cardscardanograpf {
+  border: 1px solid red;
+  height: 90px;
+  width: 80%;
+}
+.ccp__cardscardanotimestapm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  width: 80%;
+  margin-top: 20px;
+}
+.ccp__cardscardanotimestapm button {
+  background-color: #292a3c;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  color: white;
+}
+.ccp__cardscardanotimestapm button:hover {
+  background-color: #3a3a52;
+  cursor: pointer;
+  height: 80%;
+}
+.ccp__cardscardanofooter {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  background-color: #292a3c;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 10%;
+}
+.ccp__cardscardanovolume {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  height: 100%;
+}
+.ccp__cardscardanovolume span {
+  color: #9a9697;
+  font-size: 0.8rem;
+}
+.ccp__cardscardanovolume span:nth-child(2) {
   color: white;
 }
