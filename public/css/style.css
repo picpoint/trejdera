@@ -120,7 +120,7 @@ img {
   position: relative;
   top: 30px;
   height: 70px;
-  width: 70px;
+  width: 65px;
 }
 .mixincardsinfo {
   border: 1px solid red;
@@ -206,6 +206,12 @@ img {
 .mixincardsvolume span:nth-child(2) {
   color: white;
 }
+.mixinburgerline {
+  border: 2px solid white;
+  align-self: center;
+  margin: 5px 0;
+  width: 80%;
+}
 .smart {
   display: flex;
   justify-content: center;
@@ -217,6 +223,41 @@ img {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+.smart__burgermenu {
+  border: 2px solid white;
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 10px;
+  width: 55px;
+  height: 55px;
+}
+@media screen and (max-width: 480px) {
+  .smart__burgermenu {
+    display: flex;
+  }
+}
+.smart__burgerline1 {
+  border: 2px solid white;
+  align-self: center;
+  margin: 5px 0;
+  width: 80%;
+}
+.smart__burgerline2 {
+  border: 2px solid white;
+  align-self: center;
+  margin: 5px 0;
+  width: 80%;
+}
+.smart__burgerline3 {
+  border: 2px solid white;
+  align-self: center;
+  margin: 5px 0;
+  width: 80%;
 }
 .smart__menu {
   display: flex;
@@ -861,7 +902,7 @@ img {
   position: relative;
   top: 30px;
   height: 70px;
-  width: 70px;
+  width: 65px;
 }
 .ccp__cardsbitcoininfo {
   border: 1px solid red;
@@ -971,7 +1012,7 @@ img {
   position: relative;
   top: 30px;
   height: 70px;
-  width: 70px;
+  width: 65px;
 }
 .ccp__cardsethereuminfo {
   border: 1px solid red;
@@ -1078,7 +1119,7 @@ img {
   position: relative;
   top: 30px;
   height: 70px;
-  width: 70px;
+  width: 65px;
 }
 .ccp__cardsrippleinfo {
   border: 1px solid red;
@@ -1185,7 +1226,7 @@ img {
   position: relative;
   top: 30px;
   height: 70px;
-  width: 70px;
+  width: 65px;
 }
 .ccp__cardscardanoinfo {
   border: 1px solid red;

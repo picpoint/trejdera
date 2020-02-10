@@ -61,14 +61,6 @@ gulp.task('less', () => {
 });
 
 
-// gulp.task('htmlminrecords', () => {
-//   return gulp.src('./src/pages/records.hbs')  
-//   .pipe(gulp.dest('./views'))
-//   .pipe(browserSync.reload({
-// 		stream: true
-// 	}));
-// });
-
 
 gulp.task('htmlminindex', () => {
   return gulp.src('./src/index.hbs')
@@ -95,8 +87,7 @@ gulp.task('grid', () => {
 
 
 gulp.task('watch', ['less', 'htmlminindex', 'js', 'browserSync'], () => {
-  gulp.watch('./src/less/style.less', ['less']);
-  //gulp.watch('./src/pages/records.hbs', ['htmlminrecords']);
+  gulp.watch('./src/less/style.less', ['less']);  
   gulp.watch('./src/pages/index.hbs', ['htmlminindex']);
   gulp.watch('./src/js', ['js']);
 });
