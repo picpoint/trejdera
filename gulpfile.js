@@ -73,8 +73,8 @@ gulp.task('htmlminindex', () => {
 
 
 gulp.task('js', () => {
-  return gulp.src('./src/js')
-  .pipe(gulp.dest('./public'))
+  return gulp.src('./src/js/*.js')
+  .pipe(gulp.dest('./public/js'))
   .pipe(browserSync.reload({
 		stream: true
 	}));

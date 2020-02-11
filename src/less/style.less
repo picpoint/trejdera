@@ -126,9 +126,10 @@
 .mixinburgerline {
   border: 2px solid white;
   align-self: center;
-  margin: 5px 0;  
-  width: 80%;
+  margin: 4px 0;  
+  width: 70%;
 }
+
 
 // MIXINS BLOCK END
 
@@ -152,25 +153,45 @@
     //display: flex;
     display: none;
     position: fixed;
-    top: 20px;
+    top: 30px;
     left: 20px;
     flex-direction: column;
     justify-content: center;
     border-radius: 10px;
-    width: 55px;
-    height: 55px;
+    width: 50px;
+    height: 50px;
+    z-index: 10;
     .xs-block({
       display: flex;
     });
   }
   &__burgerline1 {
     .mixinburgerline();
+    transition: @transition;
   }
   &__burgerline2 {
     .mixinburgerline();
+    transition: @transition;
   }
   &__burgerline3 {
     .mixinburgerline();
+    transition: @transition;
+  }
+  &__burgerlineonerotate {    
+    transform: rotate(45deg);
+    position: relative;
+    top: 6px;    
+    transition: @transition;
+  }
+  &__burgerlinetworotate {
+    display: none;
+    transition: @transition;
+  }
+  &__burgerlinethreerotate {    
+    transform: rotate(-45deg);
+    position: relative;
+    top: -6px;    
+    transition: @transition;
   }
   &__menu {
     //border: @border;
@@ -285,7 +306,7 @@
       height: 300px;
     });
     .xs-block({
-      display: none;      
+      display: none;            
     });
     li {
       //border: @border;
