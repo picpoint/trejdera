@@ -235,6 +235,7 @@ img {
   border-radius: 10px;
   width: 50px;
   height: 50px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   z-index: 10;
 }
 @media screen and (max-width: 480px) {
@@ -247,6 +248,7 @@ img {
   align-self: center;
   margin: 4px 0;
   width: 70%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   transition: ease-in-out 0.5s;
 }
 .smart__burgerline2 {
@@ -254,6 +256,7 @@ img {
   align-self: center;
   margin: 4px 0;
   width: 70%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   transition: ease-in-out 0.5s;
 }
 .smart__burgerline3 {
@@ -261,6 +264,7 @@ img {
   align-self: center;
   margin: 4px 0;
   width: 70%;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
   transition: ease-in-out 0.5s;
 }
 .smart__burgerlineonerotate {
@@ -458,6 +462,77 @@ img {
 }
 .smart__list li a:hover {
   border-bottom: 2px solid white;
+}
+.smart__menublockfloat {
+  display: none;
+  transition: ease-in-out 0.5s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+@media screen and (max-width: 480px) {
+  .smart__menublockfloat {
+    border-radius: 10px;
+    justify-content: center;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 48%;
+  }
+}
+.smart__menublockfloatshow {
+  display: flex;
+  transition: ease-in-out 0.5s;
+}
+.smart__listfloat {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  height: 100%;
+}
+@media screen and (max-width: 720px) {
+  .smart__listfloat {
+    flex-direction: column;
+    justify-content: space-around;
+    height: 300px;
+  }
+}
+.smart__listfloat li {
+  border-radius: 5px;
+  display: flex;
+  margin: 0 25px;
+  padding: 5px 0;
+  font-family: 'Sulphur Point', sans-serif;
+  width: 100%;
+  background-color: rgba(24, 13, 59, 0.3);
+}
+@media screen and (max-width: 1140px) {
+  .smart__listfloat li {
+    margin: 0 10px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .smart__listfloat li {
+    justify-content: space-around;
+  }
+}
+.smart__listfloat li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: ease-in-out 0.5s;
+}
+@media screen and (max-width: 1140px) {
+  .smart__listfloat li a {
+    font-size: 1rem;
+    transition: ease-in-out 0.5s;
+  }
+}
+@media screen and (max-width: 720px) {
+  .smart__listfloat li a {
+    font-size: 1.5rem;
+  }
+}
+.smart__listfloat li a:hover {
+  border-bottom: 2px solid #3d2297;
 }
 .smart__regblock {
   display: flex;

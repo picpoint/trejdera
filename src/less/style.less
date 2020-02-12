@@ -150,7 +150,6 @@
   }
   &__burgermenu {
     border: 2px solid white;
-    //display: flex;
     display: none;
     position: fixed;
     top: 30px;
@@ -160,6 +159,7 @@
     border-radius: 10px;
     width: 50px;
     height: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     z-index: 10;
     .xs-block({
       display: flex;
@@ -167,14 +167,17 @@
   }
   &__burgerline1 {
     .mixinburgerline();
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     transition: @transition;
   }
   &__burgerline2 {
     .mixinburgerline();
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     transition: @transition;
   }
   &__burgerline3 {
     .mixinburgerline();
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     transition: @transition;
   }
   &__burgerlineonerotate {    
@@ -293,7 +296,7 @@
     .md-block({
       width: 100%;
     });
-  }
+  }  
   &__list {
     //border: @border;
     display: flex;
@@ -337,6 +340,69 @@
       }
     }
   }
+  &__menublockfloat{
+    display: none;
+    transition: @transition;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    .xs-block({
+      //border: @border;
+      border-radius: 10px;      
+      justify-content: center;
+      position: fixed;      
+      background-color: rgba(255, 255, 255, 0.8);
+      width: 48%;      
+    });    
+  }
+  &__menublockfloatshow {
+    display: flex;
+    transition: @transition;
+  }
+  &__listfloat {
+    //border: @border;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    .md-block({
+      flex-direction: column;
+      justify-content: space-around;
+      height: 300px;
+    });    
+    li {
+      //border: @border;
+      border-radius: 5px;
+      display: flex;      
+      margin: 0 25px;
+      padding: 5px 0;
+      font-family: 'Sulphur Point', sans-serif;
+      width: 100%;
+      background-color: rgba(24, 13, 59, 0.3);
+      .xl-block({                              
+        margin: 0 10px;
+      });
+      .md-block({
+        justify-content: space-around;        
+      });
+      a {        
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        transition: @transition;
+        .xl-block({
+          font-size: 1rem;
+          transition: @transition;
+        });
+        .md-block({          
+          font-size: 1.5rem;
+        });
+        &:hover {
+          border-bottom: 2px solid @colorbluetext;
+        }
+      }
+    }
+  }
+
   &__regblock {
     //border: @border;
     display: flex;
