@@ -3,6 +3,7 @@ const less = require('gulp-less');
 const htmlmin = require('gulp-htmlmin');
 const smartgrid = require('smart-grid');
 const browserSync = require('browser-sync').create();
+const chart = require('chart.js');
 
 
 const smartGrigConf = {

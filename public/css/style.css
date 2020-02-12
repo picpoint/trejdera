@@ -470,6 +470,7 @@ img {
 }
 @media screen and (max-width: 480px) {
   .smart__menublockfloat {
+    display: none;
     border-radius: 10px;
     justify-content: center;
     position: fixed;
