@@ -3,6 +3,7 @@ const app = express();
 const port = process.env.port || 4000;
 const path = require('path');
 const exphbs = require('express-handlebars');
+
 const hbs = exphbs.create({
   defaultLayout: 'main',
   extname: 'hbs'

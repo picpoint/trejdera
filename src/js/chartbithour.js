@@ -4,13 +4,14 @@ var chart = new Chart(ctx, {
   data: {
     labels: ['3', '6', '9', '12', '15', '18', '24'],
     datasets: [{
-      label: 'bitcoin hours',
-      backgroundColor: 'rgb(255, 99, 132)',
-      borderColor: 'rgb(255, 99, 132)',
-      data: [0, 10, 5, 2, 20, 30, 45]
+      label: 'bitcoin chart',
+      backgroundColor: 'red',
+      borderColor: 'red',
+      data: [15, 0, 20, 15, 40, 10, 50, 30, 50, 40]
     }]
   },    
   options: {}
 });
 
-alert('chart');
+
+

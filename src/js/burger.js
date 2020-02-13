@@ -1,7 +1,6 @@
 let burgermenu = document.querySelector('.smart__burgermenu');
 let menublock = document.querySelector('.smart__menublock');
 let menublockfloat = document.querySelector('.smart__menublockfloat');
-console.log(menublockfloat);
 
 
 burgermenu.addEventListener('click', () => {  

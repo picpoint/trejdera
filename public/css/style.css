@@ -100,14 +100,12 @@ img {
   height: auto;
 }
 .mixincards {
-  border: 1px solid red;
   border-radius: 5px;
   height: 350px;
   width: 270px;
   margin: 50px 14px 60px 14px;
 }
 .mixincardslogos {
-  border: 1px solid red;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -123,7 +121,6 @@ img {
   width: 65px;
 }
 .mixincardsinfo {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -131,7 +128,6 @@ img {
   background-color: #272637;
 }
 .mixincardsprice {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   height: 20px;
@@ -142,7 +138,6 @@ img {
   color: white;
 }
 .mixincardsgain {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -158,7 +153,6 @@ img {
   font-weight: bolder;
 }
 .mixincardsgraph {
-  border: 1px solid red;
   height: 90px;
   width: 80%;
 }
@@ -183,7 +177,6 @@ img {
   height: 80%;
 }
 .mixincardsfooter {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   background-color: #292a3c;
@@ -192,7 +185,6 @@ img {
   height: 10%;
 }
 .mixincardsvolume {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -976,7 +968,6 @@ img {
   justify-content: center;
 }
 .ccp__cardsbitcoin {
-  border: 1px solid red;
   border-radius: 5px;
   height: 350px;
   width: 270px;
@@ -985,7 +976,6 @@ img {
   flex-direction: column;
 }
 .ccp__cardsbitcoinlogo {
-  border: 1px solid red;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -1001,7 +991,6 @@ img {
   width: 65px;
 }
 .ccp__cardsbitcoininfo {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1009,7 +998,6 @@ img {
   background-color: #272637;
 }
 .ccp__cardsbitcoinprice {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   height: 20px;
@@ -1020,7 +1008,6 @@ img {
   color: white;
 }
 .ccp__cardsbitcoingain {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1039,7 +1026,6 @@ img {
   color: #b92c34;
 }
 .ccp__cardsbitcoingrapf {
-  border: 1px solid red;
   height: 90px;
   width: 80%;
 }
@@ -1064,7 +1050,6 @@ img {
   height: 80%;
 }
 .ccp__cardsbitcoinfooter {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   background-color: #292a3c;
@@ -1073,7 +1058,6 @@ img {
   height: 10%;
 }
 .ccp__cardsbitcoinvolume {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1088,14 +1072,12 @@ img {
   color: white;
 }
 .ccp__cardsethereum {
-  border: 1px solid red;
   border-radius: 5px;
   height: 350px;
   width: 270px;
   margin: 50px 14px 60px 14px;
 }
 .ccp__cardsethereumlogo {
-  border: 1px solid red;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -1111,7 +1093,6 @@ img {
   width: 65px;
 }
 .ccp__cardsethereuminfo {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1119,7 +1100,6 @@ img {
   background-color: #272637;
 }
 .ccp__cardsethereumprice {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   height: 20px;
@@ -1130,7 +1110,6 @@ img {
   color: white;
 }
 .ccp__cardsethereumgain {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1146,7 +1125,6 @@ img {
   font-weight: bolder;
 }
 .ccp__cardsethereumgrapf {
-  border: 1px solid red;
   height: 90px;
   width: 80%;
 }
@@ -1171,7 +1149,6 @@ img {
   height: 80%;
 }
 .ccp__cardsethereumfooter {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   background-color: #292a3c;
@@ -1180,7 +1157,6 @@ img {
   height: 10%;
 }
 .ccp__cardsethereumvolume {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1195,14 +1171,12 @@ img {
   color: white;
 }
 .ccp__cardsripple {
-  border: 1px solid red;
   border-radius: 5px;
   height: 350px;
   width: 270px;
   margin: 50px 14px 60px 14px;
 }
 .ccp__cardsripplelogo {
-  border: 1px solid red;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -1218,7 +1192,6 @@ img {
   width: 65px;
 }
 .ccp__cardsrippleinfo {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1226,7 +1199,6 @@ img {
   background-color: #272637;
 }
 .ccp__cardsrippleprice {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   height: 20px;
@@ -1237,7 +1209,6 @@ img {
   color: white;
 }
 .ccp__cardsripplegain {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1253,7 +1224,6 @@ img {
   font-weight: bolder;
 }
 .ccp__cardsripplegrapf {
-  border: 1px solid red;
   height: 90px;
   width: 80%;
 }
@@ -1278,7 +1248,6 @@ img {
   height: 80%;
 }
 .ccp__cardsripplefooter {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   background-color: #292a3c;
@@ -1287,7 +1256,6 @@ img {
   height: 10%;
 }
 .ccp__cardsripplevolume {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1302,14 +1270,12 @@ img {
   color: white;
 }
 .ccp__cardscardano {
-  border: 1px solid red;
   border-radius: 5px;
   height: 350px;
   width: 270px;
   margin: 50px 14px 60px 14px;
 }
 .ccp__cardscardanologo {
-  border: 1px solid red;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
@@ -1325,7 +1291,6 @@ img {
   width: 65px;
 }
 .ccp__cardscardanoinfo {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1333,7 +1298,6 @@ img {
   background-color: #272637;
 }
 .ccp__cardscardanoprice {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   height: 20px;
@@ -1344,7 +1308,6 @@ img {
   color: white;
 }
 .ccp__cardscardanogain {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1360,7 +1323,6 @@ img {
   font-weight: bolder;
 }
 .ccp__cardscardanograpf {
-  border: 1px solid red;
   height: 90px;
   width: 80%;
 }
@@ -1385,7 +1347,6 @@ img {
   height: 80%;
 }
 .ccp__cardscardanofooter {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   background-color: #292a3c;
@@ -1394,7 +1355,6 @@ img {
   height: 10%;
 }
 .ccp__cardscardanovolume {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
   align-items: center;
