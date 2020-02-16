@@ -941,7 +941,6 @@ img {
   height: 100%;
 }
 .ccp__wrapper {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   font-family: 'Sulphur Point', sans-serif;
@@ -951,9 +950,16 @@ img {
   font-size: 2.5rem;
   margin-top: 320px;
   color: #272637;
+  transition: ease-in-out 0.5s;
 }
 .ccp__hdrtext h2 {
   font-weight: bolder;
+}
+@media screen and (max-width: 1140px) {
+  .ccp__hdrtext {
+    font-size: 2rem;
+    transition: ease-in-out 0.5s;
+  }
 }
 .ccp__textdescr {
   width: 40%;
@@ -966,6 +972,7 @@ img {
 .ccp__cardsblock {
   display: flex;
   justify-content: center;
+  margin-bottom: 60px;
 }
 .ccp__cardsbitcoin {
   border-radius: 5px;

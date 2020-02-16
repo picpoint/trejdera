@@ -750,7 +750,7 @@
 .ccp {  
   //display: flex;
   &__wrapper {     
-    border: @border;
+    //border: @border;
     display: flex;
     flex-direction: column;    
     font-family: 'Sulphur Point', sans-serif;    
@@ -760,9 +760,14 @@
     font-size: 2.5rem;
     margin-top: 320px;
     color: @colorverydarkblue;    
+    transition: @transition;
     h2 {
       font-weight: bolder;
     }
+    .xl-block({
+      font-size: 2rem;
+      transition: @transition;
+    });
   }
   &__textdescr {
     //border: @border;
@@ -777,6 +782,7 @@
     //border: @border;    
     display: flex;
     justify-content: center;
+    margin-bottom: 60px;
   }
   
   
