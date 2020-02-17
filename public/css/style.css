@@ -100,10 +100,22 @@ img {
   height: auto;
 }
 .mixincards {
+  border: 1px solid red;
   border-radius: 5px;
   height: 350px;
   width: 270px;
   margin: 50px 14px 60px 14px;
+}
+@media screen and (max-width: 1140px) {
+  .mixincards {
+    margin: 20px 14px 10px 14px;
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .mixincards {
+    padding: 0;
+  }
 }
 .mixincardslogos {
   display: flex;
@@ -946,6 +958,7 @@ img {
   font-family: 'Sulphur Point', sans-serif;
 }
 .ccp__hdrtext {
+  border: 1px solid red;
   align-self: center;
   font-size: 2.5rem;
   margin-top: 320px;
@@ -961,26 +974,90 @@ img {
     transition: ease-in-out 0.5s;
   }
 }
+@media screen and (max-width: 720px) {
+  .ccp__hdrtext {
+    font-size: 1.7rem;
+    transition: ease-in-out 0.5s;
+  }
+}
+@media screen and (max-width: 540px) {
+  .ccp__hdrtext {
+    width: 70%;
+    text-align: center;
+    transition: ease-in-out 0.5s;
+  }
+}
+@media screen and (max-width: 480px) {
+  .ccp__hdrtext {
+    font-size: 1.5rem;
+    transition: ease-in-out 0.5s;
+  }
+}
 .ccp__textdescr {
+  border: 1px solid red;
   width: 40%;
   align-self: center;
   text-align: center;
   font-size: 1.2rem;
   margin-top: 20px;
   color: #9a9697;
+  transition: ease-in-out 0.5s;
+}
+@media screen and (max-width: 1140px) {
+  .ccp__textdescr {
+    font-size: 1rem;
+    width: 50%;
+    transition: ease-in-out 0.5s;
+  }
+}
+@media screen and (max-width: 960px) {
+  .ccp__textdescr {
+    width: 60%;
+    transition: ease-in-out 0.5s;
+  }
+}
+@media screen and (max-width: 540px) {
+  .ccp__textdescr {
+    width: 70%;
+    font-size: 0.9rem;
+    transition: ease-in-out 0.5s;
+  }
+}
+@media screen and (max-width: 480px) {
+  .ccp__textdescr {
+    width: 90%;
+  }
 }
 .ccp__cardsblock {
+  border: 1px solid red;
   display: flex;
   justify-content: center;
   margin-bottom: 60px;
 }
+@media screen and (max-width: 1140px) {
+  .ccp__cardsblock {
+    flex-wrap: wrap;
+  }
+}
 .ccp__cardsbitcoin {
+  border: 1px solid red;
   border-radius: 5px;
   height: 350px;
   width: 270px;
   margin: 50px 14px 60px 14px;
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 1140px) {
+  .ccp__cardsbitcoin {
+    margin: 20px 14px 10px 14px;
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .ccp__cardsbitcoin {
+    padding: 0;
+  }
 }
 .ccp__cardsbitcoinlogo {
   display: flex;
@@ -1079,10 +1156,22 @@ img {
   color: white;
 }
 .ccp__cardsethereum {
+  border: 1px solid red;
   border-radius: 5px;
   height: 350px;
   width: 270px;
   margin: 50px 14px 60px 14px;
+}
+@media screen and (max-width: 1140px) {
+  .ccp__cardsethereum {
+    margin: 20px 14px 10px 14px;
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .ccp__cardsethereum {
+    padding: 0;
+  }
 }
 .ccp__cardsethereumlogo {
   display: flex;
@@ -1178,10 +1267,22 @@ img {
   color: white;
 }
 .ccp__cardsripple {
+  border: 1px solid red;
   border-radius: 5px;
   height: 350px;
   width: 270px;
   margin: 50px 14px 60px 14px;
+}
+@media screen and (max-width: 1140px) {
+  .ccp__cardsripple {
+    margin: 20px 14px 10px 14px;
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .ccp__cardsripple {
+    padding: 0;
+  }
 }
 .ccp__cardsripplelogo {
   display: flex;
@@ -1277,10 +1378,22 @@ img {
   color: white;
 }
 .ccp__cardscardano {
+  border: 1px solid red;
   border-radius: 5px;
   height: 350px;
   width: 270px;
   margin: 50px 14px 60px 14px;
+}
+@media screen and (max-width: 1140px) {
+  .ccp__cardscardano {
+    margin: 20px 14px 10px 14px;
+    padding: 0 50px;
+  }
+}
+@media screen and (max-width: 720px) {
+  .ccp__cardscardano {
+    padding: 0;
+  }
 }
 .ccp__cardscardanologo {
   display: flex;

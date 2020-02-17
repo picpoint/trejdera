@@ -7,11 +7,18 @@
 
 // MIXINS BLOCK START
 .mixincards {
-  //border: @border;
+  border: @border;
   border-radius: 5px;
   height: 350px;
   width: 270px;
   margin: 50px 14px 60px 14px;
+  .xl-block({
+    margin: 20px 14px 10px 14px;
+    padding: 0 50px;
+  });
+  .md-block({
+    padding: 0;
+  });
 }
 
 .mixincardslogos {
@@ -752,10 +759,12 @@
   &__wrapper {     
     //border: @border;
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;        
+    //align-items: center;
     font-family: 'Sulphur Point', sans-serif;    
   }
   &__hdrtext {
+    border: @border;
     align-self: center;
     font-size: 2.5rem;
     margin-top: 320px;
@@ -768,21 +777,56 @@
       font-size: 2rem;
       transition: @transition;
     });
+    .md-block({
+      font-size: 1.7rem;
+      transition: @transition;
+    });
+    .sm-block({
+      width: 70%;
+      text-align: center;
+      transition: @transition;
+    });
+    .xs-block({
+      font-size: 1.5rem;
+      transition: @transition;
+    });
   }
   &__textdescr {
-    //border: @border;
+    border: @border;
     width: 40%;
     align-self: center;
     text-align: center;
     font-size: 1.2rem;
     margin-top: 20px;    
     color: @colorlightgray;
+    transition: @transition;
+    .xl-block({
+      font-size: 1rem;
+      width: 50%;
+      transition: @transition;
+    });
+    .lg-block({
+      width: 60%;
+      transition: @transition;
+    });    
+    .sm-block({
+      width: 70%;
+      font-size: 0.9rem;
+      transition: @transition;
+    });
+    .xs-block({
+      width: 90%;
+    });
   }
+  
   &__cardsblock {
-    //border: @border;    
+    border: @border;    
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
+    .xl-block({
+      flex-wrap: wrap;
+    });
   }
   
   
