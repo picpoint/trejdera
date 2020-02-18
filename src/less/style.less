@@ -7,17 +7,24 @@
 
 // MIXINS BLOCK START
 .mixincards {
-  border: @border;
+  //border: @border;
   border-radius: 5px;
   height: 350px;
   width: 270px;
   margin: 50px 14px 60px 14px;
+  transition: @transition;
   .xl-block({
     margin: 20px 14px 10px 14px;
     padding: 0 50px;
+    transition: @transition;
+  });
+  .lg-block({
+    padding: 0 30px;
+    transition: @transition;
   });
   .md-block({
     padding: 0;
+    transition: @transition;
   });
 }
 
@@ -29,12 +36,12 @@
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   height: 20%;
-  background-color: @colordarkblue;
+  background-color: @colordarkblue;  
   img {
     position: relative;
     top: 30px;
     height: 70px;
-    width: 65px;
+    width: 65px;    
   }
 }
 
@@ -137,8 +144,30 @@
   width: 70%;
 }
 
+.mixinhdrstext {  
+  align-self: center;
+  font-size: 2.5rem;
+  margin-top: 320px;
+  color: @colorverydarkblue;    
+  transition: @transition;
+}
+
+.mixintextdesc {
+  //border: @border;
+  width: 40%;
+  align-self: center;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 20px;    
+  color: @colorlightgray;
+  transition: @transition;
+}
+
 
 // MIXINS BLOCK END
+
+
+// ---------------------
 
 
 // SECTION SMART START
@@ -169,7 +198,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     z-index: 10;
     .xs-block({
-      display: flex;
+      display: flex;      
     });
   }
   &__burgerline1 {
@@ -359,6 +388,7 @@
       position: fixed;      
       background-color: rgba(255, 255, 255, 0.8);
       width: 48%;      
+      z-index: 10;
     });    
   }
   &__menublockfloatshow {
@@ -764,12 +794,7 @@
     font-family: 'Sulphur Point', sans-serif;    
   }
   &__hdrtext {
-    border: @border;
-    align-self: center;
-    font-size: 2.5rem;
-    margin-top: 320px;
-    color: @colorverydarkblue;    
-    transition: @transition;
+    .mixinhdrstext();
     h2 {
       font-weight: bolder;
     }
@@ -779,11 +804,13 @@
     });
     .md-block({
       font-size: 1.7rem;
+      margin-top: 250px;
       transition: @transition;
     });
     .sm-block({
       width: 70%;
       text-align: center;
+      margin-top: 0;
       transition: @transition;
     });
     .xs-block({
@@ -792,14 +819,7 @@
     });
   }
   &__textdescr {
-    border: @border;
-    width: 40%;
-    align-self: center;
-    text-align: center;
-    font-size: 1.2rem;
-    margin-top: 20px;    
-    color: @colorlightgray;
-    transition: @transition;
+    .mixintextdesc();
     .xl-block({
       font-size: 1rem;
       width: 50%;
@@ -820,7 +840,7 @@
   }
   
   &__cardsblock {
-    border: @border;    
+    //border: @border;    
     display: flex;
     justify-content: center;
     margin-bottom: 60px;
@@ -837,7 +857,7 @@
     flex-direction: column;    
   }
   &__cardsbitcoinlogo {
-    .mixincardslogos();
+    .mixincardslogos();    
   }
   &__cardsbitcoininfo {
     .mixincardsinfo();
@@ -954,8 +974,37 @@
     .mixincardsvolume();
   }
 
-
-
 }
 // SECTION CCP END
+
+// -----------------
+
+// SECTION PROMO START
+.promoann {
+  &__wrapper {
+    border: @border;
+    display: flex;
+    flex-direction: column;
+    background-color: @colordarkblue;
+    height: 500px;
+  }
+  &__hdrpromo {
+    .mixinhdrstext();
+    margin-top: 80px;
+    color: white;
+    font-family: 'Sulphur Point', sans-serif; 
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+  &__descpromo {
+    .mixintextdesc();
+    color: white;
+  }
+  &__movies {
+    border: @border;
+    margin-top: 50px;
+    height: 10px;
+  }
+}
+// SECTION PROMO END
 

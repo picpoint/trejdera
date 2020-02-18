@@ -100,21 +100,29 @@ img {
   height: auto;
 }
 .mixincards {
-  border: 1px solid red;
   border-radius: 5px;
   height: 350px;
   width: 270px;
   margin: 50px 14px 60px 14px;
+  transition: ease-in-out 0.5s;
 }
 @media screen and (max-width: 1140px) {
   .mixincards {
     margin: 20px 14px 10px 14px;
     padding: 0 50px;
+    transition: ease-in-out 0.5s;
+  }
+}
+@media screen and (max-width: 960px) {
+  .mixincards {
+    padding: 0 30px;
+    transition: ease-in-out 0.5s;
   }
 }
 @media screen and (max-width: 720px) {
   .mixincards {
     padding: 0;
+    transition: ease-in-out 0.5s;
   }
 }
 .mixincardslogos {
@@ -215,6 +223,22 @@ img {
   align-self: center;
   margin: 4px 0;
   width: 70%;
+}
+.mixinhdrstext {
+  align-self: center;
+  font-size: 2.5rem;
+  margin-top: 320px;
+  color: #272637;
+  transition: ease-in-out 0.5s;
+}
+.mixintextdesc {
+  width: 40%;
+  align-self: center;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #9a9697;
+  transition: ease-in-out 0.5s;
 }
 .smart {
   display: flex;
@@ -480,6 +504,7 @@ img {
     position: fixed;
     background-color: rgba(255, 255, 255, 0.8);
     width: 48%;
+    z-index: 10;
   }
 }
 .smart__menublockfloatshow {
@@ -958,7 +983,6 @@ img {
   font-family: 'Sulphur Point', sans-serif;
 }
 .ccp__hdrtext {
-  border: 1px solid red;
   align-self: center;
   font-size: 2.5rem;
   margin-top: 320px;
@@ -977,6 +1001,7 @@ img {
 @media screen and (max-width: 720px) {
   .ccp__hdrtext {
     font-size: 1.7rem;
+    margin-top: 250px;
     transition: ease-in-out 0.5s;
   }
 }
@@ -984,6 +1009,7 @@ img {
   .ccp__hdrtext {
     width: 70%;
     text-align: center;
+    margin-top: 0;
     transition: ease-in-out 0.5s;
   }
 }
@@ -994,7 +1020,6 @@ img {
   }
 }
 .ccp__textdescr {
-  border: 1px solid red;
   width: 40%;
   align-self: center;
   text-align: center;
@@ -1029,7 +1054,6 @@ img {
   }
 }
 .ccp__cardsblock {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   margin-bottom: 60px;
@@ -1040,11 +1064,11 @@ img {
   }
 }
 .ccp__cardsbitcoin {
-  border: 1px solid red;
   border-radius: 5px;
   height: 350px;
   width: 270px;
   margin: 50px 14px 60px 14px;
+  transition: ease-in-out 0.5s;
   display: flex;
   flex-direction: column;
 }
@@ -1052,11 +1076,19 @@ img {
   .ccp__cardsbitcoin {
     margin: 20px 14px 10px 14px;
     padding: 0 50px;
+    transition: ease-in-out 0.5s;
+  }
+}
+@media screen and (max-width: 960px) {
+  .ccp__cardsbitcoin {
+    padding: 0 30px;
+    transition: ease-in-out 0.5s;
   }
 }
 @media screen and (max-width: 720px) {
   .ccp__cardsbitcoin {
     padding: 0;
+    transition: ease-in-out 0.5s;
   }
 }
 .ccp__cardsbitcoinlogo {
@@ -1156,21 +1188,29 @@ img {
   color: white;
 }
 .ccp__cardsethereum {
-  border: 1px solid red;
   border-radius: 5px;
   height: 350px;
   width: 270px;
   margin: 50px 14px 60px 14px;
+  transition: ease-in-out 0.5s;
 }
 @media screen and (max-width: 1140px) {
   .ccp__cardsethereum {
     margin: 20px 14px 10px 14px;
     padding: 0 50px;
+    transition: ease-in-out 0.5s;
+  }
+}
+@media screen and (max-width: 960px) {
+  .ccp__cardsethereum {
+    padding: 0 30px;
+    transition: ease-in-out 0.5s;
   }
 }
 @media screen and (max-width: 720px) {
   .ccp__cardsethereum {
     padding: 0;
+    transition: ease-in-out 0.5s;
   }
 }
 .ccp__cardsethereumlogo {
@@ -1267,21 +1307,29 @@ img {
   color: white;
 }
 .ccp__cardsripple {
-  border: 1px solid red;
   border-radius: 5px;
   height: 350px;
   width: 270px;
   margin: 50px 14px 60px 14px;
+  transition: ease-in-out 0.5s;
 }
 @media screen and (max-width: 1140px) {
   .ccp__cardsripple {
     margin: 20px 14px 10px 14px;
     padding: 0 50px;
+    transition: ease-in-out 0.5s;
+  }
+}
+@media screen and (max-width: 960px) {
+  .ccp__cardsripple {
+    padding: 0 30px;
+    transition: ease-in-out 0.5s;
   }
 }
 @media screen and (max-width: 720px) {
   .ccp__cardsripple {
     padding: 0;
+    transition: ease-in-out 0.5s;
   }
 }
 .ccp__cardsripplelogo {
@@ -1378,21 +1426,29 @@ img {
   color: white;
 }
 .ccp__cardscardano {
-  border: 1px solid red;
   border-radius: 5px;
   height: 350px;
   width: 270px;
   margin: 50px 14px 60px 14px;
+  transition: ease-in-out 0.5s;
 }
 @media screen and (max-width: 1140px) {
   .ccp__cardscardano {
     margin: 20px 14px 10px 14px;
     padding: 0 50px;
+    transition: ease-in-out 0.5s;
+  }
+}
+@media screen and (max-width: 960px) {
+  .ccp__cardscardano {
+    padding: 0 30px;
+    transition: ease-in-out 0.5s;
   }
 }
 @media screen and (max-width: 720px) {
   .ccp__cardscardano {
     padding: 0;
+    transition: ease-in-out 0.5s;
   }
 }
 .ccp__cardscardanologo {
@@ -1487,4 +1543,37 @@ img {
 }
 .ccp__cardscardanovolume span:nth-child(2) {
   color: white;
+}
+.promoann__wrapper {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  background-color: #292a3c;
+  height: 500px;
+}
+.promoann__hdrpromo {
+  align-self: center;
+  margin-top: 320px;
+  color: #272637;
+  transition: ease-in-out 0.5s;
+  margin-top: 80px;
+  color: white;
+  font-family: 'Sulphur Point', sans-serif;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.promoann__descpromo {
+  width: 40%;
+  align-self: center;
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 20px;
+  color: #9a9697;
+  transition: ease-in-out 0.5s;
+  color: white;
+}
+.promoann__movies {
+  border: 1px solid red;
+  margin-top: 50px;
+  height: 10px;
 }
