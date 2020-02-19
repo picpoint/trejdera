@@ -240,6 +240,12 @@ img {
   color: #9a9697;
   transition: ease-in-out 0.5s;
 }
+.mixinmoviesblock {
+  border: 1px solid red;
+  width: 280px;
+  height: 100%;
+  margin: 0 10px;
+}
 .smart {
   display: flex;
   justify-content: center;
@@ -1549,7 +1555,7 @@ img {
   display: flex;
   flex-direction: column;
   background-color: #292a3c;
-  height: 500px;
+  height: 1000px;
 }
 .promoann__hdrpromo {
   align-self: center;
@@ -1574,6 +1580,93 @@ img {
 }
 .promoann__movies {
   border: 1px solid red;
+  display: flex;
+  justify-content: center;
   margin-top: 50px;
-  height: 10px;
+  height: 285px;
+}
+.promoann__bch {
+  border: 1px solid red;
+  width: 280px;
+  height: 100%;
+  margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.promoann__bchvideo {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 95%;
+  height: 75%;
+  background-color: #555555;
+}
+.promoann__bchvideo button {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  background-color: #555555;
+  outline: none;
+  cursor: pointer;
+}
+.promoann__bchvideo button i {
+  color: white;
+  font-size: 1.5rem;
+}
+.promoann__bchdesc {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+  color: white;
+}
+.promoann__bchdescone {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+.promoann__bchdescone span:nth-child(2) {
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 1px 7px;
+}
+.promoann__bchdesctwo {
+  border: 1px solid red;
+}
+.promoann__bitclave {
+  border: 1px solid red;
+  width: 280px;
+  height: 100%;
+  margin: 0 10px;
+}
+.promoann__annoucement {
+  border: 1px solid red;
+  width: 280px;
+  height: 100%;
+  margin: 0 10px;
+}
+.promoann__selfkey {
+  border: 1px solid red;
+  width: 280px;
+  height: 100%;
+  margin: 0 10px;
+}
+.promoann__canya {
+  border: 1px solid red;
+  width: 280px;
+  height: 100%;
+  margin: 0 10px;
+}
+.promoann__qlink {
+  border: 1px solid red;
+  width: 280px;
+  height: 100%;
+  margin: 0 10px;
 }

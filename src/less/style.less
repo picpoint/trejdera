@@ -163,6 +163,13 @@
   transition: @transition;
 }
 
+.mixinmoviesblock {
+  border: @border;
+  width: 280px;
+  height: 100%;  
+  margin: 0 10px;
+}
+
 
 // MIXINS BLOCK END
 
@@ -986,7 +993,7 @@
     display: flex;
     flex-direction: column;
     background-color: @colordarkblue;
-    height: 500px;
+    height: 1000px;
   }
   &__hdrpromo {
     .mixinhdrstext();
@@ -1002,8 +1009,80 @@
   }
   &__movies {
     border: @border;
+    display: flex;
+    justify-content: center;
     margin-top: 50px;
-    height: 10px;
+    height: 285px;
+  }
+  &__bch {
+    .mixinmoviesblock();
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__bchvideo {
+    border: @border;    
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    border-radius: 5px;
+    width: 95%;
+    height: 75%;
+    background-color: @colorgray;
+    button {      
+      border: 2px solid white;
+      border-radius: 50%;
+      width: 65px;
+      height: 65px;
+      background-color: @colorgray;
+      outline: none;
+      cursor: pointer;
+      i {            
+        color: white;          
+        font-size: 1.5rem;
+      }
+    }
+    
+  }
+  &__bchdesc {
+    border: @border;
+    display: flex;
+    flex-direction: column;        
+    justify-content: center;
+    width: 100%;
+    height: 20%;    
+    color: white;
+  }
+  &__bchdescone {
+    border: @border;
+    display: flex;
+    justify-content: space-between;    
+    span {
+      &:nth-child(2) {        
+        border: 1px solid white;        
+        border-radius: 3px;
+        padding: 1px 7px;
+      }
+    }
+  }
+  &__bchdesctwo {
+    border: @border;    
+  }
+  &__bitclave {
+    .mixinmoviesblock();
+  }
+  &__annoucement {
+    .mixinmoviesblock();
+  }
+  &__selfkey {
+    .mixinmoviesblock();
+  }
+  &__canya {
+    .mixinmoviesblock();
+  }
+  &__qlink {
+    .mixinmoviesblock();
   }
 }
 // SECTION PROMO END
