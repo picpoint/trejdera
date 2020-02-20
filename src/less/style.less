@@ -163,11 +163,65 @@
   transition: @transition;
 }
 
+.mixinpromoannblocks {
+  display: flex;
+  flex-direction: column;    
+  justify-content: space-around;
+  align-items: center;
+}
+
 .mixinmoviesblock {
   border: @border;
   width: 280px;
   height: 100%;  
   margin: 0 10px;
+}
+
+.mixinmoviesvideo {
+  border: @border;    
+  display: flex;
+  justify-content: center;    
+  align-items: center;
+  border-radius: 5px;
+  width: 95%;
+  height: 75%;
+  background-color: @colorgray;
+  button {      
+    border: 2px solid white;
+    border-radius: 50%;
+    width: 65px;
+    height: 65px;
+    background-color: @colorgray;
+    outline: none;
+    cursor: pointer;
+    i {            
+      color: white;          
+      font-size: 1.5rem;
+    }
+  }    
+}
+
+.mixindesc {
+  border: @border;
+  display: flex;
+  flex-direction: column;        
+  justify-content: center;
+  width: 100%;
+  height: 20%;    
+  color: white;
+}
+
+.mixindescone {
+  border: @border;
+  display: flex;
+  justify-content: space-between;    
+  span {
+    &:nth-child(2) {        
+      border: 1px solid white;        
+      border-radius: 3px;
+      padding: 1px 7px;
+    }
+  }
 }
 
 
@@ -1016,74 +1070,95 @@
   }
   &__bch {
     .mixinmoviesblock();
-    display: flex;
-    flex-direction: column;    
-    justify-content: space-around;
-    align-items: center;
+    .mixinpromoannblocks();
   }
   &__bchvideo {
-    border: @border;    
-    display: flex;
-    justify-content: center;    
-    align-items: center;
-    border-radius: 5px;
-    width: 95%;
-    height: 75%;
-    background-color: @colorgray;
-    button {      
-      border: 2px solid white;
-      border-radius: 50%;
-      width: 65px;
-      height: 65px;
-      background-color: @colorgray;
-      outline: none;
-      cursor: pointer;
-      i {            
-        color: white;          
-        font-size: 1.5rem;
-      }
-    }
-    
+    .mixinmoviesvideo();
   }
   &__bchdesc {
-    border: @border;
-    display: flex;
-    flex-direction: column;        
-    justify-content: center;
-    width: 100%;
-    height: 20%;    
-    color: white;
+    .mixindesc();
   }
   &__bchdescone {
-    border: @border;
-    display: flex;
-    justify-content: space-between;    
-    span {
-      &:nth-child(2) {        
-        border: 1px solid white;        
-        border-radius: 3px;
-        padding: 1px 7px;
-      }
-    }
+    .mixindescone();
   }
   &__bchdesctwo {
-    border: @border;    
+    //border: @border;    
   }
   &__bitclave {
     .mixinmoviesblock();
+    .mixinpromoannblocks();
   }
+  &__bitclavevideo {
+    .mixinmoviesvideo();
+  }
+  &__bitclavedesc {
+    .mixindesc();
+  }
+  &__bitclavedescone {
+    .mixindescone();
+  }
+
+
   &__annoucement {
     .mixinmoviesblock();
+    .mixinpromoannblocks();
   }
+  &__annoucementvideo {
+    .mixinmoviesvideo();
+  }
+  &__annoucementdesc {
+    .mixindesc();
+  }
+  &__annoucementdescone {
+    .mixindescone();
+  }
+
+
+
   &__selfkey {
     .mixinmoviesblock();
+    .mixinpromoannblocks();
   }
+  &__selfkeyvideo {
+    .mixinmoviesvideo();
+  }
+  &__selfkeydesc {
+    .mixindesc();
+  }
+  &__selfkeydescone {
+    .mixindescone();
+  }
+
+
   &__canya {
     .mixinmoviesblock();
+    .mixinpromoannblocks();
   }
+  &__canyavideo {
+    .mixinmoviesvideo();
+  }
+  &__canyadesc {
+    .mixindesc();
+  }
+  &__canyadescone {
+    .mixindescone();
+  }
+
+
   &__qlink {
     .mixinmoviesblock();
   }
+  &__qlinkvideo {
+    .mixinmoviesvideo();
+  }
+  &__qlinkdesc {
+    .mixindesc();
+  }
+  &__qlinkdescone {
+    .mixindescone();
+  }
+
+
 }
 // SECTION PROMO END
 

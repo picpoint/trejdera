@@ -240,11 +240,59 @@ img {
   color: #9a9697;
   transition: ease-in-out 0.5s;
 }
+.mixinpromoannblocks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
 .mixinmoviesblock {
   border: 1px solid red;
   width: 280px;
   height: 100%;
   margin: 0 10px;
+}
+.mixinmoviesvideo {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 95%;
+  height: 75%;
+  background-color: #555555;
+}
+.mixinmoviesvideo button {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  background-color: #555555;
+  outline: none;
+  cursor: pointer;
+}
+.mixinmoviesvideo button i {
+  color: white;
+  font-size: 1.5rem;
+}
+.mixindesc {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+  color: white;
+}
+.mixindescone {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+.mixindescone span:nth-child(2) {
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 1px 7px;
 }
 .smart {
   display: flex;
@@ -1637,36 +1685,259 @@ img {
   border-radius: 3px;
   padding: 1px 7px;
 }
-.promoann__bchdesctwo {
-  border: 1px solid red;
-}
 .promoann__bitclave {
   border: 1px solid red;
   width: 280px;
   height: 100%;
   margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.promoann__bitclavevideo {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 95%;
+  height: 75%;
+  background-color: #555555;
+}
+.promoann__bitclavevideo button {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  background-color: #555555;
+  outline: none;
+  cursor: pointer;
+}
+.promoann__bitclavevideo button i {
+  color: white;
+  font-size: 1.5rem;
+}
+.promoann__bitclavedesc {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+  color: white;
+}
+.promoann__bitclavedescone {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+.promoann__bitclavedescone span:nth-child(2) {
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 1px 7px;
 }
 .promoann__annoucement {
   border: 1px solid red;
   width: 280px;
   height: 100%;
   margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.promoann__annoucementvideo {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 95%;
+  height: 75%;
+  background-color: #555555;
+}
+.promoann__annoucementvideo button {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  background-color: #555555;
+  outline: none;
+  cursor: pointer;
+}
+.promoann__annoucementvideo button i {
+  color: white;
+  font-size: 1.5rem;
+}
+.promoann__annoucementdesc {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+  color: white;
+}
+.promoann__annoucementdescone {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+.promoann__annoucementdescone span:nth-child(2) {
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 1px 7px;
 }
 .promoann__selfkey {
   border: 1px solid red;
   width: 280px;
   height: 100%;
   margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.promoann__selfkeyvideo {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 95%;
+  height: 75%;
+  background-color: #555555;
+}
+.promoann__selfkeyvideo button {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  background-color: #555555;
+  outline: none;
+  cursor: pointer;
+}
+.promoann__selfkeyvideo button i {
+  color: white;
+  font-size: 1.5rem;
+}
+.promoann__selfkeydesc {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+  color: white;
+}
+.promoann__selfkeydescone {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+.promoann__selfkeydescone span:nth-child(2) {
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 1px 7px;
 }
 .promoann__canya {
   border: 1px solid red;
   width: 280px;
   height: 100%;
   margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.promoann__canyavideo {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 95%;
+  height: 75%;
+  background-color: #555555;
+}
+.promoann__canyavideo button {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  background-color: #555555;
+  outline: none;
+  cursor: pointer;
+}
+.promoann__canyavideo button i {
+  color: white;
+  font-size: 1.5rem;
+}
+.promoann__canyadesc {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+  color: white;
+}
+.promoann__canyadescone {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+.promoann__canyadescone span:nth-child(2) {
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 1px 7px;
 }
 .promoann__qlink {
   border: 1px solid red;
   width: 280px;
   height: 100%;
   margin: 0 10px;
+}
+.promoann__qlinkvideo {
+  border: 1px solid red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 95%;
+  height: 75%;
+  background-color: #555555;
+}
+.promoann__qlinkvideo button {
+  border: 2px solid white;
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  background-color: #555555;
+  outline: none;
+  cursor: pointer;
+}
+.promoann__qlinkvideo button i {
+  color: white;
+  font-size: 1.5rem;
+}
+.promoann__qlinkdesc {
+  border: 1px solid red;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 20%;
+  color: white;
+}
+.promoann__qlinkdescone {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-between;
+}
+.promoann__qlinkdescone span:nth-child(2) {
+  border: 1px solid white;
+  border-radius: 3px;
+  padding: 1px 7px;
 }
