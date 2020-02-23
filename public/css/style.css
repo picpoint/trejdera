@@ -247,13 +247,11 @@ img {
   align-items: center;
 }
 .mixinmoviesblock {
-  border: 1px solid red;
   width: 280px;
-  height: 100%;
+  height: 285px;
   margin: 0 10px;
 }
 .mixinmoviesvideo {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -276,7 +274,6 @@ img {
   font-size: 1.5rem;
 }
 .mixindesc {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -285,7 +282,6 @@ img {
   color: white;
 }
 .mixindescone {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
 }
@@ -1599,11 +1595,9 @@ img {
   color: white;
 }
 .promoann__wrapper {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   background-color: #292a3c;
-  height: 1000px;
 }
 .promoann__hdrpromo {
   align-self: center;
@@ -1612,9 +1606,15 @@ img {
   transition: ease-in-out 0.5s;
   margin-top: 80px;
   color: white;
+  text-align: center;
   font-family: 'Sulphur Point', sans-serif;
   font-size: 2.5rem;
   font-weight: bold;
+}
+@media screen and (max-width: 1140px) {
+  .promoann__hdrpromo {
+    font-size: 2rem;
+  }
 }
 .promoann__descpromo {
   width: 40%;
@@ -1626,17 +1626,42 @@ img {
   transition: ease-in-out 0.5s;
   color: white;
 }
+@media screen and (max-width: 1400px) {
+  .promoann__descpromo {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .promoann__descpromo {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 720px) {
+  .promoann__descpromo {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .promoann__descpromo {
+    width: 90%;
+  }
+}
 .promoann__movies {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
+  align-self: center;
+  width: 100%;
   margin-top: 50px;
-  height: 285px;
+}
+@media screen and (max-width: 1600px) {
+  .promoann__movies {
+    flex-wrap: wrap;
+    width: 95%;
+  }
 }
 .promoann__bch {
-  border: 1px solid red;
   width: 280px;
-  height: 100%;
+  height: 285px;
   margin: 0 10px;
   display: flex;
   flex-direction: column;
@@ -1644,7 +1669,6 @@ img {
   align-items: center;
 }
 .promoann__bchvideo {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1667,7 +1691,6 @@ img {
   font-size: 1.5rem;
 }
 .promoann__bchdesc {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1676,7 +1699,6 @@ img {
   color: white;
 }
 .promoann__bchdescone {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
 }
@@ -1686,9 +1708,8 @@ img {
   padding: 1px 7px;
 }
 .promoann__bitclave {
-  border: 1px solid red;
   width: 280px;
-  height: 100%;
+  height: 285px;
   margin: 0 10px;
   display: flex;
   flex-direction: column;
@@ -1696,7 +1717,6 @@ img {
   align-items: center;
 }
 .promoann__bitclavevideo {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1719,7 +1739,6 @@ img {
   font-size: 1.5rem;
 }
 .promoann__bitclavedesc {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1728,7 +1747,6 @@ img {
   color: white;
 }
 .promoann__bitclavedescone {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
 }
@@ -1738,9 +1756,8 @@ img {
   padding: 1px 7px;
 }
 .promoann__annoucement {
-  border: 1px solid red;
   width: 280px;
-  height: 100%;
+  height: 285px;
   margin: 0 10px;
   display: flex;
   flex-direction: column;
@@ -1748,7 +1765,6 @@ img {
   align-items: center;
 }
 .promoann__annoucementvideo {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1771,7 +1787,6 @@ img {
   font-size: 1.5rem;
 }
 .promoann__annoucementdesc {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1780,7 +1795,6 @@ img {
   color: white;
 }
 .promoann__annoucementdescone {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
 }
@@ -1790,9 +1804,8 @@ img {
   padding: 1px 7px;
 }
 .promoann__selfkey {
-  border: 1px solid red;
   width: 280px;
-  height: 100%;
+  height: 285px;
   margin: 0 10px;
   display: flex;
   flex-direction: column;
@@ -1800,7 +1813,6 @@ img {
   align-items: center;
 }
 .promoann__selfkeyvideo {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1823,7 +1835,6 @@ img {
   font-size: 1.5rem;
 }
 .promoann__selfkeydesc {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1832,7 +1843,6 @@ img {
   color: white;
 }
 .promoann__selfkeydescone {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
 }
@@ -1842,9 +1852,8 @@ img {
   padding: 1px 7px;
 }
 .promoann__canya {
-  border: 1px solid red;
   width: 280px;
-  height: 100%;
+  height: 285px;
   margin: 0 10px;
   display: flex;
   flex-direction: column;
@@ -1852,7 +1861,6 @@ img {
   align-items: center;
 }
 .promoann__canyavideo {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1875,7 +1883,6 @@ img {
   font-size: 1.5rem;
 }
 .promoann__canyadesc {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1884,7 +1891,6 @@ img {
   color: white;
 }
 .promoann__canyadescone {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
 }
@@ -1894,13 +1900,11 @@ img {
   padding: 1px 7px;
 }
 .promoann__qlink {
-  border: 1px solid red;
   width: 280px;
-  height: 100%;
+  height: 285px;
   margin: 0 10px;
 }
 .promoann__qlinkvideo {
-  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1923,7 +1927,6 @@ img {
   font-size: 1.5rem;
 }
 .promoann__qlinkdesc {
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1932,7 +1935,6 @@ img {
   color: white;
 }
 .promoann__qlinkdescone {
-  border: 1px solid red;
   display: flex;
   justify-content: space-between;
 }
@@ -1940,4 +1942,31 @@ img {
   border: 1px solid white;
   border-radius: 3px;
   padding: 1px 7px;
+}
+.promoann__viewall {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 55px;
+  margin: 40px 0 70px 0;
+}
+.promoann__viewall button {
+  border: none;
+  width: 270px;
+  height: 90%;
+  border-radius: 30px;
+  background-color: #6f54f1;
+  font-size: 1rem;
+  font-weight: bold;
+  color: white;
+  outline: none;
+  cursor: pointer;
+  transition: ease-in-out 0.5s;
+}
+@media screen and (max-width: 720px) {
+  .promoann__viewall button {
+    width: 200px;
+    font-size: 0.8rem;
+    transition: ease-in-out 0.5s;
+  }
 }
