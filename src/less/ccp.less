@@ -1,0 +1,202 @@
+// SECTION CCP START
+.ccp {  
+    //display: flex;
+    &__wrapper {     
+      //border: @border;
+      display: flex;
+      flex-direction: column;        
+      //align-items: center;
+      font-family: 'Sulphur Point', sans-serif;    
+    }
+    &__hdrtext {
+      .mixinhdrstext();
+      h2 {
+        font-weight: bolder;
+      }
+      .xl-block({
+        font-size: 2rem;
+        transition: @transition;
+      });
+      .md-block({
+        font-size: 1.7rem;
+        margin-top: 250px;
+        transition: @transition;
+      });
+      .sm-block({
+        width: 70%;
+        text-align: center;
+        margin-top: 0;
+        transition: @transition;
+      });
+      .xs-block({
+        font-size: 1.5rem;
+        transition: @transition;
+      });
+    }
+    &__textdescr {
+      .mixintextdesc();
+      .xl-block({
+        font-size: 1rem;
+        width: 50%;
+        transition: @transition;
+      });
+      .lg-block({
+        width: 60%;
+        transition: @transition;
+      });    
+      .sm-block({
+        width: 70%;
+        font-size: 0.9rem;
+        transition: @transition;
+      });
+      .xs-block({
+        width: 90%;
+      });
+    }
+    
+    &__cardsblock {
+      //border: @border;    
+      display: flex;
+      justify-content: center;
+      //margin-bottom: 60px;
+      .xl-block({
+        flex-wrap: wrap;
+      });
+    }
+    
+    
+    &__cardsbitcoin {
+      .mixincards();
+      //border: @border;
+      display: flex;
+      flex-direction: column;    
+    }
+    &__cardsbitcoinlogo {
+      .mixincardslogos();    
+    }
+    &__cardsbitcoininfo {
+      .mixincardsinfo();
+    }
+    &__cardsbitcoinprice {
+      .mixincardsprice();    
+    }
+    &__cardsbitcoingain {
+      .mixincardsgain();    
+      span:nth-child(2) {
+        color: @colorred;
+      }
+    }
+    &__cardsbitcoingrapf {
+      .mixincardsgraph();
+    }
+    &__cardsbitcointimestapm {     
+      .mixincardstimestamp();
+    }
+    &__cardsbitcoinfooter {
+      .mixincardsfooter();
+    }
+    &__cardsbitcoinvolume {
+      .mixincardsvolume();
+    }
+  
+    
+    &__cardsethereum {
+      .mixincards();
+    }
+    &__cardsethereumlogo {
+      .mixincardslogos();
+    }
+    &__cardsethereuminfo {
+      .mixincardsinfo();
+    }
+    &__cardsethereumprice {
+      .mixincardsprice();
+    }
+    &__cardsethereumgain {
+     .mixincardsgain();    
+    }
+    &__cardsethereumgrapf {
+      .mixincardsgraph();    
+    }
+    &__cardsethereumtimestapm {
+      .mixincardstimestamp();
+    }
+    &__cardsethereumfooter {
+      .mixincardsfooter();
+    }
+    &__cardsethereumvolume {
+      .mixincardsvolume();
+    }
+  
+    
+    &__cardsripple {
+      .mixincards();
+    }
+    &__cardsripplelogo {
+      .mixincardslogos();
+    }
+    &__cardsrippleinfo {
+      .mixincardsinfo();
+    }
+    &__cardsrippleprice {
+      .mixincardsprice();
+    }
+    &__cardsripplegain {
+      .mixincardsgain();    
+    }
+    &__cardsripplegrapf {
+      .mixincardsgraph();
+    }
+    &__cardsrippletimestapm {
+      .mixincardstimestamp();
+    }
+    &__cardsripplefooter {
+      .mixincardsfooter();
+    }
+    &__cardsripplevolume {
+      .mixincardsvolume();
+    }
+    
+  
+    &__cardscardano {
+      .mixincards();
+    }
+    &__cardscardanologo {
+      .mixincardslogos();
+    }
+    &__cardscardanoinfo {
+      .mixincardsinfo();
+    }
+    &__cardscardanoprice {
+      .mixincardsprice();    
+    }
+    &__cardscardanogain {
+      .mixincardsgain();    
+    }
+    &__cardscardanograpf {
+      .mixincardsgraph();
+    }
+    &__cardscardanotimestapm {
+      .mixincardstimestamp();
+    }
+    &__cardscardanofooter {
+      .mixincardsfooter();
+    }
+    &__cardscardanovolume {
+      .mixincardsvolume();
+    }
+
+    &__switchslide {
+      //border: @border;
+      display: flex;
+      justify-content: center;      
+      align-items: center;
+      height: 20px;
+      margin: 35px 0 65px 0;
+      input {
+        margin: 0 3px;        
+      }
+    }
+  
+  }
+  // SECTION CCP END

@@ -2,108 +2,11 @@
   font-family: 'Sulphur Point', sans-serif;
   src: url('../../public/fonts/SulphurPoint-Bold.ttf');
 }
-body,
-div,
-dl,
-dt,
-dd,
-ul,
-li,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-pre,
-code,
-form,
-fieldset,
-input,
-textarea,
-p,
-blockquote,
-th,
-td {
-  margin: 0;
-  padding: 0;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-fieldset,
-img,
-abbr {
-  border: 0;
-}
-address,
-caption,
-cite,
-code,
-dfn,
-em,
-strong,
-th,
-var {
-  font-style: normal;
-  font-weight: normal;
-}
-ul li {
-  list-style: none;
-}
-caption,
-th {
-  text-align: left;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-size: 100%;
-  font-weight: normal;
-}
-sup {
-  vertical-align: text-top;
-}
-sub {
-  vertical-align: text-bottom;
-}
-input,
-textarea,
-select {
-  font-family: inherit;
-  font-size: inherit;
-  font-weight: inherit;
-}
-legend {
-  color: #000;
-}
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section,
-main {
-  display: block;
-}
-img {
-  max-width: 100%;
-  height: auto;
-}
 .mixincards {
   border-radius: 5px;
   height: 350px;
   width: 270px;
-  margin: 50px 14px 60px 14px;
+  margin: 50px 14px 0 14px;
   transition: ease-in-out 0.5s;
 }
 @media screen and (max-width: 1140px) {
@@ -247,6 +150,7 @@ img {
   align-items: center;
 }
 .mixinmoviesblock {
+  border: 1px solid red;
   width: 280px;
   height: 285px;
   margin: 0 10px;
@@ -1106,7 +1010,6 @@ img {
 .ccp__cardsblock {
   display: flex;
   justify-content: center;
-  margin-bottom: 60px;
 }
 @media screen and (max-width: 1140px) {
   .ccp__cardsblock {
@@ -1117,7 +1020,7 @@ img {
   border-radius: 5px;
   height: 350px;
   width: 270px;
-  margin: 50px 14px 60px 14px;
+  margin: 50px 14px 0 14px;
   transition: ease-in-out 0.5s;
   display: flex;
   flex-direction: column;
@@ -1241,7 +1144,7 @@ img {
   border-radius: 5px;
   height: 350px;
   width: 270px;
-  margin: 50px 14px 60px 14px;
+  margin: 50px 14px 0 14px;
   transition: ease-in-out 0.5s;
 }
 @media screen and (max-width: 1140px) {
@@ -1360,7 +1263,7 @@ img {
   border-radius: 5px;
   height: 350px;
   width: 270px;
-  margin: 50px 14px 60px 14px;
+  margin: 50px 14px 0 14px;
   transition: ease-in-out 0.5s;
 }
 @media screen and (max-width: 1140px) {
@@ -1479,7 +1382,7 @@ img {
   border-radius: 5px;
   height: 350px;
   width: 270px;
-  margin: 50px 14px 60px 14px;
+  margin: 50px 14px 0 14px;
   transition: ease-in-out 0.5s;
 }
 @media screen and (max-width: 1140px) {
@@ -1594,6 +1497,16 @@ img {
 .ccp__cardscardanovolume span:nth-child(2) {
   color: white;
 }
+.ccp__switchslide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20px;
+  margin: 35px 0 65px 0;
+}
+.ccp__switchslide input {
+  margin: 0 3px;
+}
 .promoann__wrapper {
   display: flex;
   flex-direction: column;
@@ -1647,6 +1560,7 @@ img {
   }
 }
 .promoann__movies {
+  border: 1px solid red;
   display: flex;
   justify-content: center;
   align-self: center;
@@ -1660,6 +1574,7 @@ img {
   }
 }
 .promoann__bch {
+  border: 1px solid red;
   width: 280px;
   height: 285px;
   margin: 0 10px;
@@ -1708,6 +1623,7 @@ img {
   padding: 1px 7px;
 }
 .promoann__bitclave {
+  border: 1px solid red;
   width: 280px;
   height: 285px;
   margin: 0 10px;
@@ -1756,6 +1672,7 @@ img {
   padding: 1px 7px;
 }
 .promoann__annoucement {
+  border: 1px solid red;
   width: 280px;
   height: 285px;
   margin: 0 10px;
@@ -1804,6 +1721,7 @@ img {
   padding: 1px 7px;
 }
 .promoann__selfkey {
+  border: 1px solid red;
   width: 280px;
   height: 285px;
   margin: 0 10px;
@@ -1852,6 +1770,7 @@ img {
   padding: 1px 7px;
 }
 .promoann__canya {
+  border: 1px solid red;
   width: 280px;
   height: 285px;
   margin: 0 10px;
@@ -1900,6 +1819,7 @@ img {
   padding: 1px 7px;
 }
 .promoann__qlink {
+  border: 1px solid red;
   width: 280px;
   height: 285px;
   margin: 0 10px;
@@ -1969,4 +1889,101 @@ img {
     font-size: 0.8rem;
     transition: ease-in-out 0.5s;
   }
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+input,
+textarea,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img,
+abbr {
+  border: 0;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ul li {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+sup {
+  vertical-align: text-top;
+}
+sub {
+  vertical-align: text-bottom;
+}
+input,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}
+legend {
+  color: #000;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+main {
+  display: block;
+}
+img {
+  max-width: 100%;
+  height: auto;
 }

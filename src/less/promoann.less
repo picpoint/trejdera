@@ -1,0 +1,169 @@
+// SECTION PROMO START
+.promoann {
+    &__wrapper {
+      //border: @border;
+      display: flex;
+      flex-direction: column;
+      background-color: @colordarkblue;    
+    }
+    &__hdrpromo {    
+      .mixinhdrstext();
+      //border: @border;
+      margin-top: 80px;
+      color: white;
+      text-align: center;
+      font-family: 'Sulphur Point', sans-serif; 
+      font-size: 2.5rem;
+      font-weight: bold;
+      .xl-block({
+        font-size: 2rem;
+      });
+    }
+    &__descpromo {
+      .mixintextdesc();
+      //border: @border;    
+      color: white;
+      .xxl-block({
+        width: 55%;
+      });
+      .xl-block({
+        font-size: 1rem;
+      });
+      .md-block({
+        width: 70%;
+      });
+      .xs-block({
+        width: 90%;
+      });
+    }
+    &__movies {
+      border: @border;
+      display: flex;
+      justify-content: center;
+      align-self: center;
+      width: 100%;
+      margin-top: 50px;    
+      .gxl-block({
+        flex-wrap: wrap;
+        width: 95%;
+      });
+    }
+    &__bch {
+      .mixinmoviesblock();
+      .mixinpromoannblocks();
+    }
+    &__bchvideo {
+      .mixinmoviesvideo();
+    }
+    &__bchdesc {
+      .mixindesc();
+    }
+    &__bchdescone {
+      .mixindescone();
+    }  
+    &__bitclave {
+      .mixinmoviesblock();
+      .mixinpromoannblocks();
+    }
+    &__bitclavevideo {
+      .mixinmoviesvideo();
+    }
+    &__bitclavedesc {
+      .mixindesc();
+    }
+    &__bitclavedescone {
+      .mixindescone();
+    }
+  
+  
+    &__annoucement {
+      .mixinmoviesblock();
+      .mixinpromoannblocks();
+    }
+    &__annoucementvideo {
+      .mixinmoviesvideo();
+    }
+    &__annoucementdesc {
+      .mixindesc();
+    }
+    &__annoucementdescone {
+      .mixindescone();
+    }
+  
+  
+  
+    &__selfkey {
+      .mixinmoviesblock();
+      .mixinpromoannblocks();
+    }
+    &__selfkeyvideo {
+      .mixinmoviesvideo();
+    }
+    &__selfkeydesc {
+      .mixindesc();
+    }
+    &__selfkeydescone {
+      .mixindescone();
+    }
+  
+  
+    &__canya {
+      .mixinmoviesblock();
+      .mixinpromoannblocks();
+    }
+    &__canyavideo {
+      .mixinmoviesvideo();
+    }
+    &__canyadesc {
+      .mixindesc();
+    }
+    &__canyadescone {
+      .mixindescone();
+    }
+  
+  
+    &__qlink {
+      .mixinmoviesblock();
+    }
+    &__qlinkvideo {
+      .mixinmoviesvideo();
+    }
+    &__qlinkdesc {
+      .mixindesc();
+    }
+    &__qlinkdescone {
+      .mixindescone();
+    }
+  
+    &__viewall {
+      //border: @border;
+      display: flex;
+      justify-content: center;    
+      align-items: center;
+      height: 55px;
+      margin: 40px 0 70px 0;
+      button {
+        border: none;
+        width: 270px;
+        height: 90%;
+        border-radius: 30px;
+        background-color: @colorblue;      
+        font-size: 1rem;
+        font-weight: bold;
+        color: white;
+        outline: none;
+        cursor: pointer;    
+        transition: @transition;  
+        .md-block({
+          width: 200px;
+          font-size: 0.8rem;
+          transition: @transition;  
+        });
+      }
+    }
+  
+  
+  }
+  // SECTION PROMO END
+  
+  

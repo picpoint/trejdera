@@ -1,0 +1,221 @@
+// MIXINS BLOCK START
+.mixincards {
+    //border: @border;
+    border-radius: 5px;
+    height: 350px;
+    width: 270px;
+    margin: 50px 14px 0 14px;
+    transition: @transition;
+    .xl-block({
+      margin: 20px 14px 10px 14px;
+      padding: 0 50px;
+      transition: @transition;
+    });
+    .lg-block({
+      padding: 0 30px;
+      transition: @transition;
+    });
+    .md-block({
+      padding: 0;
+      transition: @transition;
+    });
+  }
+  
+  .mixincardslogos {
+    //border: @border;
+    display: flex;
+    flex-direction: column-reverse;    
+    align-items: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    height: 20%;
+    background-color: @colordarkblue;  
+    img {
+      position: relative;
+      top: 30px;
+      height: 70px;
+      width: 65px;    
+    }
+  }
+  
+  .mixincardsinfo {
+    //border: @border;
+    display: flex;    
+    flex-direction: column;        
+    align-items: center;
+    height: 70%;
+    background-color: @colorverydarkblue;        
+  }
+  
+  .mixincardsprice {
+    //border: @border;
+    display: flex;
+    justify-content: space-between;        
+    height: 20px;
+    width: 80%;
+    margin-top: 40px;    
+    span {
+      color: white;      
+    }
+  }
+  
+  .mixincardsgain {
+    //border: @border;
+    display: flex;
+    justify-content: space-between;            
+    align-items: center;
+    height: 20px;
+    width: 80%;    
+    span {
+      color: @colorlightgray;     
+      font-size: 0.7rem;    
+      &:nth-child(2) {
+        color: @colorgreen;
+        font-weight: bolder;
+      }
+    }
+  }
+  
+  .mixincardsgraph {
+    //border: @border;
+    height: 90px;
+    width: 80%;
+  }
+  
+  .mixincardstimestamp {
+    //border: @border;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    width: 80%;    
+    margin-top: 20px;
+    button {
+      background-color: @colordarkblue;
+      border-radius: 15px;
+      border: none;
+      outline: none;
+      color: white;      
+      &:hover {
+        background-color: @colorbluegray;
+        cursor: pointer;
+        height: 80%;
+      }
+    }
+  }
+  
+  .mixincardsfooter {
+    //border: @border;
+    display: flex;
+    justify-content: center;
+    background-color: @colordarkblue;    
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    height: 10%;
+  }
+  
+  .mixincardsvolume {
+    //border: @border;
+    display: flex;
+    justify-content: space-between;        
+    align-items: center;
+    width: 80%;    
+    height: 100%;
+    span {
+      color: @colorlightgray;
+      font-size: 0.8rem;
+      &:nth-child(2) {
+        color: white;
+      }
+    }
+  }
+  
+  .mixinburgerline {
+    border: 2px solid white;
+    align-self: center;
+    margin: 4px 0;  
+    width: 70%;
+  }
+  
+  .mixinhdrstext {  
+    align-self: center;
+    font-size: 2.5rem;
+    margin-top: 320px;
+    color: @colorverydarkblue;    
+    transition: @transition;
+  }
+  
+  .mixintextdesc {
+    //border: @border;
+    width: 40%;
+    align-self: center;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-top: 20px;    
+    color: @colorlightgray;
+    transition: @transition;
+  }
+  
+  .mixinpromoannblocks {
+    display: flex;
+    flex-direction: column;    
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .mixinmoviesblock {
+    border: @border;
+    width: 280px;
+    height: 285px;  
+    margin: 0 10px;
+  }
+  
+  .mixinmoviesvideo {
+    //border: @border;    
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+    border-radius: 5px;
+    width: 95%;
+    height: 75%;
+    background-color: @colorgray;
+    button {      
+      border: 2px solid white;
+      border-radius: 50%;
+      width: 65px;
+      height: 65px;
+      background-color: @colorgray;
+      outline: none;
+      cursor: pointer;
+      i {            
+        color: white;          
+        font-size: 1.5rem;
+      }
+    }    
+  }
+  
+  .mixindesc {
+    //border: @border;
+    display: flex;
+    flex-direction: column;        
+    justify-content: center;
+    width: 100%;
+    height: 20%;    
+    color: white;
+  }
+  
+  .mixindescone {
+    //border: @border;
+    display: flex;
+    justify-content: space-between;    
+    span {
+      &:nth-child(2) {        
+        border: 1px solid white;        
+        border-radius: 3px;
+        padding: 1px 7px;
+      }
+    }
+  }
+  
+  
+  // MIXINS BLOCK END
