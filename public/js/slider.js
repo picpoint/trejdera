@@ -1,6 +1,7 @@
 let movies = document.querySelector('.promoann__movies');         // блок promoann с видеоблоками
 let moviesChilds = movies.children;                               // дочерние видео-блоки 
 let wdth = document.documentElement.clientWidth;                  // определяем ширину экрана
+console.log(`width screen ${wdth}`);
 
 
 
@@ -21,9 +22,14 @@ class Slider {                                                    // класс 
           if(offset < wdth) {                                     // если смещение < ширины экрана
             offset += 5;                                          // на каждом шаге добавляем 5рх
             this.childrens[i].style.right = offset + 'px';        // каждому дочернему блоку присваиваем новое значение смещения вправо
+            console.log(offset);
+          } else if(offset >= wdth) {
+            offset = -wdth;
+            offset += 5;                                          // на каждом шаге добавляем 5рх
+            this.childrens[i].style.right = offset + 'px';        // каждому дочернему блоку присваиваем новое значение смещения вправо
           }
-        }, 50);
-      }, 1000);      
+        }, 50);        
+      }, 5000);      
 
     }
   }
