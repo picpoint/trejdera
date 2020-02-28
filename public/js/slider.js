@@ -11,12 +11,11 @@ class Slider {                                                    // класс 
     this.childrens = childrens;
   }
   
+  /*
   scrolling() {                                                   // ф-ия прокрутки 
-    let offset = 0;                                               // изначальное смещение = 0
-    
+    let offset = 0;                                               // изначальное смещение = 0    
     for(let i = 0; i < this.childrens.length; i++) {              // для всех дочерних элементов 
-      this.childrens[i].style.position = 'relative';              // ставим относительное позиционирование
-  
+      this.childrens[i].style.position = 'relative';              // ставим относительное позиционирование  
       setTimeout(() => {                                          // через 1с
         setInterval(() => {                                       // по интервалу 50 мс
           if(offset < wdth) {                                     // если смещение < ширины экрана
@@ -33,6 +32,7 @@ class Slider {                                                    // класс 
 
     }
   }
+  */
 
   
 }

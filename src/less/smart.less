@@ -12,6 +12,41 @@
       flex-direction: column;
       width: 100%;
     }
+    &__arrowup {
+      border: @border;
+      border-radius: 50%;
+      //display: flex;
+      display: none;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      position: fixed;
+      left: 93%;
+      bottom: 5%;
+      width: 80px;
+      height: 80px;
+      cursor: pointer;
+      button {
+        border: @border;
+        border-radius: 50%;
+        background-color: transparent;
+        width: 50px;
+        height: 50px;
+        //border: none;
+        outline: none;
+        cursor: pointer;
+        i {
+          font-size: 2rem;
+          color: darkblue;
+        }
+      }
+      span {
+        border: @border;
+        color: darkblue;
+        font-weight: bolder;
+        cursor: pointer;
+      }
+    }
     &__burgermenu {
       border: 2px solid white;
       display: none;

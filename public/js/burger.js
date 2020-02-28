@@ -7,7 +7,6 @@ burgermenu.addEventListener('click', () => {
   burgermenu.firstElementChild.classList.toggle('smart__burgerlineonerotate');
   burgermenu.firstElementChild.nextElementSibling.classList.toggle('smart__burgerlinetworotate');
   burgermenu.lastElementChild.classList.toggle('smart__burgerlinethreerotate');  
-  menublockfloat.classList.toggle('smart__menublockfloatshow');
-  
+  menublockfloat.classList.toggle('smart__menublockfloatshow');  
 });
 
