@@ -13,10 +13,10 @@
       width: 100%;
     }
     &__arrowup {
-      border: @border;
+      //border: @border;
       border-radius: 50%;
-      //display: flex;
-      display: none;
+      display: flex;
+      //display: none;
       flex-direction: column;
       justify-content: flex-start;
       align-items: center;
@@ -25,24 +25,28 @@
       bottom: 5%;
       width: 80px;
       height: 80px;
+      background-color: rgba(255, 255, 255, 0.1);
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+      opacity: 0;
       cursor: pointer;
       button {
-        border: @border;
+        //border: @border;
         border-radius: 50%;
         background-color: transparent;
         width: 50px;
         height: 50px;
-        //border: none;
+        border: none;
         outline: none;
         cursor: pointer;
         i {
           font-size: 2rem;
-          color: darkblue;
+          color: @colorblue;
         }
       }
       span {
-        border: @border;
-        color: darkblue;
+        //border: @border;
+        color: @colorblue;
+        font-size: 0.85rem;
         font-weight: bolder;
         cursor: pointer;
       }

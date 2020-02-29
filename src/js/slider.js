@@ -1,7 +1,7 @@
 let movies = document.querySelector('.promoann__movies');         // блок promoann с видеоблоками
 let moviesChilds = movies.children;                               // дочерние видео-блоки 
 let wdth = document.documentElement.clientWidth;                  // определяем ширину экрана
-console.log(`width screen ${wdth}`);
+//console.log(`width screen ${wdth}`);
 
 
 
@@ -39,4 +39,4 @@ class Slider {                                                    // класс 
 
 
 let block = new Slider(movies, moviesChilds);                      // вызываем класс с конкретным блоком и его дочерними элементами
-block.scrolling();                                                 // вызываем ф-ию прокрутки
+//block.scrolling();                                                 // вызываем ф-ию прокрутки
