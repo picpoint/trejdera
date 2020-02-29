@@ -16,15 +16,15 @@ class ScrollingPageUp {
   showBlock() {
     let valueScroll = getCoords(this.blkArr);    
     if(valueScroll > 1000) {
-      arrowup.style.opacity = '1';
-      arrowup.style.cursor = 'pointer';
-      arrowup.firstElementChild.style.cursor = 'pointer';
-      arrowup.lastElementChild.style.cursor = 'pointer';
+      this.blkArr.style.opacity = '1';
+      this.blkArr.style.cursor = 'pointer';
+      this.blkArr.firstElementChild.style.cursor = 'pointer';
+      this.blkArr.lastElementChild.style.cursor = 'pointer';
     } else { 
-      arrowup.style.opacity = '0';
-      arrowup.style.cursor = 'default';
-      arrowup.firstElementChild.style.cursor = 'default';
-      arrowup.lastElementChild.style.cursor = 'default';
+      this.blkArr.style.opacity = '0';
+      this.blkArr.style.cursor = 'default';
+      this.blkArr.firstElementChild.style.cursor = 'default';
+      this.blkArr.lastElementChild.style.cursor = 'default';
     }
   }
 

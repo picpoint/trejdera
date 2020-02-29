@@ -14,7 +14,7 @@ class ScrollingPageUp {
   }
 
   showBlock() {
-    let valueScroll = getCoords(this.blkArr);    
+    let valueScroll = getCoords.bind(this, this.blkArr);    
     if(valueScroll > 1000) {
       this.blkArr.style.opacity = '1';
       this.blkArr.style.cursor = 'pointer';
