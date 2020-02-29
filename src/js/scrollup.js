@@ -2,6 +2,51 @@ let arrowup = document.querySelector('.smart__arrowup');                      //
 
 
 
+class ScrollingPageUp {
+  constructor(blockArrow) {
+    this.blkArr = blockArrow;
+  }
+
+  getCoords() {
+    let elem = this.blkArr.getBoundingClientRect();  
+    let top = elem.top + pageYOffset;
+    return top;
+  }
+
+  showBlock() {
+    let valueScroll = getCoords(this.blkArr);    
+    if(valueScroll > 1000) {
+      arrowup.style.opacity = '1';
+      arrowup.style.cursor = 'pointer';
+      arrowup.firstElementChild.style.cursor = 'pointer';
+      arrowup.lastElementChild.style.cursor = 'pointer';
+    } else { 
+      arrowup.style.opacity = '0';
+      arrowup.style.cursor = 'default';
+      arrowup.firstElementChild.style.cursor = 'default';
+      arrowup.lastElementChild.style.cursor = 'default';
+    }
+  }
+
+  pageUp() {
+    window.scrollTo(0, 0);  
+  }
+
+}
+
+let makeUp = new ScrollingPageUp(arrowup);
+
+window.addEventListener('scroll', makeUp.showBlock);
+window.addEventListener('load', makeUp.showBlock);
+arrowup.addEventListener('click', makeUp.pageUp);
+
+
+
+
+
+
+// FUNCTIONALS PROGRAMMING
+/*
 function getCoords(div) {                                                     // ф-ия получения координат блока
   let elem = div.getBoundingClientRect();                                     // определяем координаты
   let top = elem.top + pageYOffset;                                           // top = координата + текущая прокрутка 
@@ -38,3 +83,4 @@ window.addEventListener('load', showBlock);                                   //
                                                                               //  - (сделано для того, чтобы если пользователь обновит страницу по середине, 
                                                                               //  -  у него показалась кнопка прокрутки)
 arrowup.addEventListener('click', pageUp);                                    // вешаем событие click на блок и вызываем ф-ию переброса в начало страницы
+*/
