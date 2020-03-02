@@ -29,6 +29,26 @@
       box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
       opacity: 0;
       cursor: pointer;
+      transition: @transition;
+      .xxl-block({
+        width: 70px;
+        height: 70px;
+        transition: @transition;
+      });
+      .xl-block({
+        left: 89%;
+      });
+      .md-block({
+        left: 85%;
+        width: 60px;
+        height: 60px;
+      });
+      .sm-block({
+        left: 82%;  
+      });
+      .xs-block({
+        left: 80%;
+      });
       button {
         //border: @border;
         border-radius: 50%;
@@ -38,9 +58,27 @@
         border: none;
         outline: none;
         cursor: pointer;
+        transition: @transition;
+        .xxl-block({
+          width: 40px;
+          height: 40px;
+          transition: @transition;
+        });
+        .md-block({
+          width: 30px;
+          height: 30px;
+        });
         i {
           font-size: 2rem;
           color: @colorblue;
+          transition: @transition;
+          .xxl-block({
+            font-size: 1.7rem;
+            transition: @transition;
+          });
+          .md-block({
+            font-size: 1.4rem;
+          });
         }
       }
       span {
@@ -49,6 +87,10 @@
         font-size: 0.85rem;
         font-weight: bolder;
         cursor: pointer;
+        .xl-block({
+          font-size: 0.75rem;
+        });
+        
       }
     }
     &__burgermenu {

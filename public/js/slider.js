@@ -1,7 +1,6 @@
 let movies = document.querySelector('.promoann__movies');         // блок promoann с видеоблоками
 let moviesChilds = movies.children;                               // дочерние видео-блоки 
-let wdth = document.documentElement.clientWidth;                  // определяем ширину экрана
-//console.log(`width screen ${wdth}`);
+let wdthScreen = document.documentElement.clientWidth;            // определяем ширину экрана
 
 
 
@@ -11,32 +10,29 @@ class Slider {                                                    // класс 
     this.childrens = childrens;
   }
   
-  /*
+  
   scrolling() {                                                   // ф-ия прокрутки 
-    let offset = 0;                                               // изначальное смещение = 0    
-    for(let i = 0; i < this.childrens.length; i++) {              // для всех дочерних элементов 
-      this.childrens[i].style.position = 'relative';              // ставим относительное позиционирование  
-      setTimeout(() => {                                          // через 1с
-        setInterval(() => {                                       // по интервалу 50 мс
-          if(offset < wdth) {                                     // если смещение < ширины экрана
-            offset += 5;                                          // на каждом шаге добавляем 5рх
-            this.childrens[i].style.right = offset + 'px';        // каждому дочернему блоку присваиваем новое значение смещения вправо
-            console.log(offset);
-          } else if(offset >= wdth) {
-            offset = -wdth;
-            offset += 5;                                          // на каждом шаге добавляем 5рх
-            this.childrens[i].style.right = offset + 'px';        // каждому дочернему блоку присваиваем новое значение смещения вправо
-          }
-        }, 50);        
-      }, 5000);      
-
-    }
+    let offset = 0;
+    
+    setTimeout(() => {
+      for(let i = 0; i < this.childrens.length; i++) {
+        setInterval(() => {          
+            //console.log(this.childrens[i]);
+            this.childrens[i].style.position = 'relative';
+            if(offset < wdthScreen) {
+              offset += 3;
+            }
+            this.childrens[i].style.right = offset + 'px';
+        }, 10);
+      }
+    }, 3000);
+    //console.log(this.childrens);    
   }
-  */
+  
 
   
 }
 
 
 let block = new Slider(movies, moviesChilds);                      // вызываем класс с конкретным блоком и его дочерними элементами
-//block.scrolling();                                                 // вызываем ф-ию прокрутки
+block.scrolling();                                                 // вызываем ф-ию прокрутки

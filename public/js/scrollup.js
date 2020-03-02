@@ -37,14 +37,15 @@ class ScrollingPageUp {
 
 let makeUp = new ScrollingPageUp(arrowup);
 
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', () => {
   makeUp.showBlock();
 });
 
-window.addEventListener('load', function() {
+window.addEventListener('load', () => {
   makeUp.showBlock();
 });
-arrowup.addEventListener('click', function() {
+
+arrowup.addEventListener('click', () => {
   makeUp.pageUp();
 });
 

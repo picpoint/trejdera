@@ -150,7 +150,6 @@
   align-items: center;
 }
 .mixinmoviesblock {
-  border: 1px solid red;
   width: 280px;
   height: 285px;
   margin: 0 10px;
@@ -221,6 +220,36 @@
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
   opacity: 0;
   cursor: pointer;
+  transition: ease-in-out 0.5s;
+}
+@media screen and (max-width: 1400px) {
+  .smart__arrowup {
+    width: 70px;
+    height: 70px;
+    transition: ease-in-out 0.5s;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .smart__arrowup {
+    left: 89%;
+  }
+}
+@media screen and (max-width: 720px) {
+  .smart__arrowup {
+    left: 85%;
+    width: 60px;
+    height: 60px;
+  }
+}
+@media screen and (max-width: 540px) {
+  .smart__arrowup {
+    left: 82%;
+  }
+}
+@media screen and (max-width: 480px) {
+  .smart__arrowup {
+    left: 80%;
+  }
 }
 .smart__arrowup button {
   border-radius: 50%;
@@ -230,16 +259,47 @@
   border: none;
   outline: none;
   cursor: pointer;
+  transition: ease-in-out 0.5s;
+}
+@media screen and (max-width: 1400px) {
+  .smart__arrowup button {
+    width: 40px;
+    height: 40px;
+    transition: ease-in-out 0.5s;
+  }
+}
+@media screen and (max-width: 720px) {
+  .smart__arrowup button {
+    width: 30px;
+    height: 30px;
+  }
 }
 .smart__arrowup button i {
   font-size: 2rem;
   color: #6f54f1;
+  transition: ease-in-out 0.5s;
+}
+@media screen and (max-width: 1400px) {
+  .smart__arrowup button i {
+    font-size: 1.7rem;
+    transition: ease-in-out 0.5s;
+  }
+}
+@media screen and (max-width: 720px) {
+  .smart__arrowup button i {
+    font-size: 1.4rem;
+  }
 }
 .smart__arrowup span {
   color: #6f54f1;
   font-size: 0.85rem;
   font-weight: bolder;
   cursor: pointer;
+}
+@media screen and (max-width: 1140px) {
+  .smart__arrowup span {
+    font-size: 0.75rem;
+  }
 }
 .smart__burgermenu {
   border: 2px solid white;
@@ -1609,7 +1669,6 @@
   }
 }
 .promoann__bch {
-  border: 1px solid red;
   width: 280px;
   height: 285px;
   margin: 0 10px;
@@ -1658,7 +1717,6 @@
   padding: 1px 7px;
 }
 .promoann__bitclave {
-  border: 1px solid red;
   width: 280px;
   height: 285px;
   margin: 0 10px;
@@ -1707,7 +1765,6 @@
   padding: 1px 7px;
 }
 .promoann__annoucement {
-  border: 1px solid red;
   width: 280px;
   height: 285px;
   margin: 0 10px;
@@ -1756,7 +1813,6 @@
   padding: 1px 7px;
 }
 .promoann__selfkey {
-  border: 1px solid red;
   width: 280px;
   height: 285px;
   margin: 0 10px;
@@ -1805,7 +1861,6 @@
   padding: 1px 7px;
 }
 .promoann__canya {
-  border: 1px solid red;
   width: 280px;
   height: 285px;
   margin: 0 10px;
@@ -1854,7 +1909,6 @@
   padding: 1px 7px;
 }
 .promoann__qlink {
-  border: 1px solid red;
   width: 280px;
   height: 285px;
   margin: 0 10px;
