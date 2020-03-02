@@ -9,14 +9,12 @@ class ScrollingPageUp {
 
   getCoords() {
     let elem = this.blkArr.getBoundingClientRect();      
-    let top = elem.top + pageYOffset;
-    console.log(`top - ${top}`);
+    let top = elem.top + pageYOffset;    
     return top;
   }
 
   showBlock() {
-    let valueScroll = this.getCoords();                
-    console.log(`valueScroll - ${valueScroll}`);
+    let valueScroll = this.getCoords();                    
     if(valueScroll > 1000) {
       this.blkArr.style.opacity = '1';
       this.blkArr.style.cursor = 'pointer';
@@ -33,18 +31,22 @@ class ScrollingPageUp {
   pageUp() {
     window.scrollTo(0, 0);  
   }
-
 }
 
 
 
 let makeUp = new ScrollingPageUp(arrowup);
-makeUp.getCoords();
-makeUp.showBlock();
 
-window.addEventListener('scroll', makeUp.showBlock);
-window.addEventListener('load', makeUp.showBlock);
-arrowup.addEventListener('click', makeUp.pageUp);
+window.addEventListener('scroll', function() {
+  makeUp.showBlock();
+});
+
+window.addEventListener('load', function() {
+  makeUp.showBlock();
+});
+arrowup.addEventListener('click', function() {
+  makeUp.pageUp();
+});
 
 
 
