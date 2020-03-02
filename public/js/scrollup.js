@@ -7,20 +7,16 @@ class ScrollingPageUp {
     this.blkArr = blockArrow;
   }
 
-  // getCoords() {
-  //   let elem = this.blkArr.getBoundingClientRect();      
-  //   let top = elem.top + pageYOffset;
-  //   console.log(top);
-  //   return top;
-  // }
-
-  showBlock() {
-    //let valueScroll = getCoords();    
-    //this.blkArr = blockArrow;
+  getCoords() {
     let elem = this.blkArr.getBoundingClientRect();      
     let top = elem.top + pageYOffset;
-    let valueScroll = top;
-    console.log(valueScroll);
+    console.log(`top - ${top}`);
+    return top;
+  }
+
+  showBlock() {
+    let valueScroll = this.getCoords();                
+    console.log(`valueScroll - ${valueScroll}`);
     if(valueScroll > 1000) {
       this.blkArr.style.opacity = '1';
       this.blkArr.style.cursor = 'pointer';
@@ -40,8 +36,10 @@ class ScrollingPageUp {
 
 }
 
+
+
 let makeUp = new ScrollingPageUp(arrowup);
-//makeUp.getCoords();
+makeUp.getCoords();
 makeUp.showBlock();
 
 window.addEventListener('scroll', makeUp.showBlock);
