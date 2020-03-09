@@ -11,23 +11,23 @@ class Slider {                                                    // класс 
   }
   
   
-  scrolling() {                                                   // ф-ия прокрутки 
-    let offset = 0;
+  // scrolling() {                                                   // ф-ия прокрутки 
+  //   let offset = 0;
     
-    setTimeout(() => {
-      for(let i = 0; i < this.childrens.length; i++) {
-        setInterval(() => {          
-            //console.log(this.childrens[i]);
-            this.childrens[i].style.position = 'relative';
-            if(offset < wdthScreen) {
-              offset += 3;
-            }
-            this.childrens[i].style.right = offset + 'px';
-        }, 10);
-      }
-    }, 3000);
-    //console.log(this.childrens);    
-  }
+  //   setTimeout(() => {
+  //     for(let i = 0; i < this.childrens.length; i++) {
+  //       setInterval(() => {          
+  //           //console.log(this.childrens[i]);
+  //           this.childrens[i].style.position = 'relative';
+  //           if(offset < wdthScreen) {
+  //             offset += 3;
+  //           }
+  //           this.childrens[i].style.right = offset + 'px';
+  //       }, 10);
+  //     }
+  //   }, 3000);
+  //   //console.log(this.childrens);    
+  // }
   
 
   
