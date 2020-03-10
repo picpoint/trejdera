@@ -1,6 +1,7 @@
 // let classCharts = include('classCharts.js');
+// const classCharts = require('./classCharts.js');
+
 var ctx = document.getElementById('bitcoinchart').getContext('2d');
-const classCharts = require('./classCharts.js');
 
 let btcHourlabels = ['3', '6', '9', '12', '15', '18', '24'];
 let btcHourlabelName = 'bitcoin chart';
@@ -9,8 +10,7 @@ let brdColorRed = 'red';
 let btcHourdata = [15, 0, 20, 15, 40, 10, 50, 30, 50, 40];
 
 
-
-let btcchart = classCharts(btcHourlabels, btcHourlabelName, bgColorRed, brdColorRed, btcHourdata);
+let btcchart = new Charts(btcHourlabels, btcHourlabelName, bgColorRed, brdColorRed, btcHourdata);
 btcchart.chartMethod();
 
 // var ctx = document.getElementById('bitcoinchart').getContext('2d');

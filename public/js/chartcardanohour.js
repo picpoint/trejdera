@@ -1,17 +1,7 @@
 var ctx = document.getElementById('cardanochart').getContext('2d');
-var chart = new Chart(ctx, {    
-  type: 'line',    
-  data: {
-    labels: ['3', '6', '9', '12', '15', '18', '24'],
-    datasets: [{
-      label: 'cardano chart',
-      backgroundColor: 'green',
-      borderColor: 'green',
-      data: [0, 10, 5, 50, 30, 15, 40]
-    }]
-  },    
-  options: {}
-});
+let crdHourlabels = ['3', '6', '9', '12', '15', '18', '24'];
+let crdHourlabelName = 'bitcoin chart';
+let crdHourdata = [0, 10, 5, 50, 30, 15, 40];
 
-
-
+let crdchart = new Charts(crdHourlabels, crdHourlabelName, bgColorGreen, brdColorGreen, crdHourdata);
+crdchart.chartMethod();

@@ -21,8 +21,7 @@
 // });
 
 
-
-module.exports = class Charts {
+class Charts {
   constructor(labels, labelName, bgColor, brdColor, data) {
     this.labels = labels;
     this.labelName = labelName;
@@ -45,8 +44,7 @@ module.exports = class Charts {
       },    
       options: {}
     });
-  }
-  
+  }  
 } 
 
 
