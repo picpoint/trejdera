@@ -3,4 +3,5 @@
 3) Сделать слайдер на ооп для блока promoann и для блока ccp
   - И адаптив.
 4) У блока сср сделать переключение графиков на Hour, Day, Week, Month
+  - https://raw.githubusercontent.com/picpoint/trejdera/master/datasCharts.json
 
