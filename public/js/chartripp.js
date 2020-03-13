@@ -27,6 +27,7 @@ crdripphour.addEventListener('click', () => {
 
 
 
+
 let crdrippday = document.querySelector('.crdrippday');
 
 crdrippday.addEventListener('click', () => {
@@ -41,6 +42,8 @@ crdrippday.addEventListener('click', () => {
 });
 
 
+
+
 let crdrippweek = document.querySelector('.crdrippweek');
 
 crdrippweek.addEventListener('click', () => {
@@ -48,8 +51,24 @@ crdrippweek.addEventListener('click', () => {
   let rippWeeklabelName = 'ripple chart';
   let bgColorGreenRippWeek = 'green';
   let brdColorGreenRippWeek = 'green';
-  let rippDaydata = [1, 1, 15, 5];
+  let rippWeekdata = [1, 1, 15, 5];
 
-  let rippchartweek = new Charts(rippWeeklabels, rippWeeklabelName, bgColorGreenRippWeek, brdColorGreenRippWeek, rippDaydata);
+  let rippchartweek = new Charts(rippWeeklabels, rippWeeklabelName, bgColorGreenRippWeek, brdColorGreenRippWeek, rippWeekdata);
   rippchartweek.chartMethod();
+});
+
+
+
+
+let crdrippmonth = document.querySelector('.crdrippmonth');
+
+crdrippmonth.addEventListener('click', () => {
+  let rippMonthlabels = ['1', '2', '3'];
+  let rippMonthlabelName = 'ripple chart';
+  let bgColorGreenRippMonth = 'green';
+  let brdColorGreenRippMonth = 'green';
+  let rippMonthdata = [4, 4, 4, 0];
+
+  let rippchartmonth = new Charts(rippMonthlabels, rippMonthlabelName, bgColorGreenRippMonth, brdColorGreenRippMonth, rippMonthdata);
+  rippchartmonth.chartMethod();
 });
