@@ -14,8 +14,7 @@ btccharthour.chartMethod();
 
 let crdbithour = document.querySelector('.crdbithour');
 
-crdbithour.addEventListener('click', ()=> {
-  //var ctx = document.getElementById('bitcoinchart').getContext('2d');
+crdbithour.addEventListener('click', ()=> {  
   let btcHourlabels = ['3', '6', '9', '12', '15', '18', '24'];
   let btcHourlabelName = 'bitcoin chart';
   bgColorRedChartHour = 'red';
@@ -30,8 +29,7 @@ crdbithour.addEventListener('click', ()=> {
 
 let crdbitday = document.querySelector('.crdbitday');
 
-crdbitday.addEventListener('click', () => {
-  //var ctx = document.getElementById('bitcoinchart').getContext('2d');
+crdbitday.addEventListener('click', () => {  
   let btcDaylabels = ['5', '10', '15', '20', '25', '30'];
   let btcDaylabelName = 'bitcoin chart';
   let bgColorRedChartDay = 'red';
