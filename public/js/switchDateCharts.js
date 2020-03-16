@@ -11,7 +11,7 @@ crdbitday.addEventListener('click', () => {
   xhr.addEventListener('readystatechange', () => {
     if(xhr.readyState == 4 && xhr.status == 200) {
       obj = xhr.response.btcday;
-      console.log(obj);
+      //console.log(obj);
     }
   });
 
