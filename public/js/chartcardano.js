@@ -43,7 +43,6 @@ crdcardanoday.addEventListener('click', () => {
 
 
 
-
 let crdcardanoweek = document.querySelector('.crdcardanoweek');
 
 crdcardanoweek.addEventListener('click', () => {

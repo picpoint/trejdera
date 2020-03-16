@@ -2,6 +2,8 @@
 +2) Разбить весь файл style.less на подфайлы
 3) Сделать слайдер на ооп для блока promoann и для блока ccp
   - И адаптив.
-4) У блока сср сделать переключение графиков на Hour, Day, Week, Month
-  - https://raw.githubusercontent.com/picpoint/trejdera/master/datasCharts.json
++4) У блока сср сделать переключение графиков на Hour, Day, Week, Month
+5) Сделать запуск видео в блоке promoann
+    - https://youtu.be/UoKlKx-3FcA  
+  
 
