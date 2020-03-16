@@ -9,7 +9,7 @@
   },
   "btcday": {
     "block": "bitcoinchart",
-    "daylabels": "['5', '10', '15', '20', '25', '30']",
+    "daylabels": "[5, 10, 15, 20, 25, 30]",
     "labelName": "bitcoin chart",
     "bgColor": "red",
     "brdColor": "red",
