@@ -150,7 +150,6 @@
   align-items: center;
 }
 .mixinmoviesblock {
-  border: 1px solid red;
   width: 280px;
   height: 285px;
   margin: 0 10px;
@@ -1669,7 +1668,6 @@
   }
 }
 .promoann__bch {
-  border: 1px solid red;
   width: 280px;
   height: 285px;
   margin: 0 10px;
@@ -1718,7 +1716,6 @@
   padding: 1px 7px;
 }
 .promoann__bitclave {
-  border: 1px solid red;
   width: 280px;
   height: 285px;
   margin: 0 10px;
@@ -1767,7 +1764,6 @@
   padding: 1px 7px;
 }
 .promoann__annoucement {
-  border: 1px solid red;
   width: 280px;
   height: 285px;
   margin: 0 10px;
@@ -1816,7 +1812,6 @@
   padding: 1px 7px;
 }
 .promoann__selfkey {
-  border: 1px solid red;
   width: 280px;
   height: 285px;
   margin: 0 10px;
@@ -1865,7 +1860,6 @@
   padding: 1px 7px;
 }
 .promoann__canya {
-  border: 1px solid red;
   width: 280px;
   height: 285px;
   margin: 0 10px;
@@ -1914,10 +1908,13 @@
   padding: 1px 7px;
 }
 .promoann__qlink {
-  border: 1px solid red;
   width: 280px;
   height: 285px;
   margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 .promoann__qlinkvideo {
   display: flex;
