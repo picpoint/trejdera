@@ -1,7 +1,7 @@
 {
   "btchour": {
     "block": "bitcoinchart",
-    "hourlabels": "['3', '6', '9', '12', '15', '18', '24']",
+    "hourlabels": "[3, 6, 9, 12, 15, 18, 24]",
     "labelName": "bitcoin chart",
     "bgColor": "red",
     "brdColor": "red",
@@ -9,7 +9,7 @@
   },
   "btcday": {
     "block": "bitcoinchart",
-    "daylabels": "['5', '10', '15', '20', '25', '30']",
+    "daylabels": "[5, 10, 15, 20, 25, 30]",
     "labelName": "bitcoin chart",
     "bgColor": "red",
     "brdColor": "red",
@@ -17,7 +17,7 @@
   },
   "btcweek": {
     "block": "bitcoinchart",
-    "weeklabels": "['1', '2', '3', '4',]",
+    "weeklabels": "[1, 2, 3, 4]",
     "labelName": "bitcoin chart",
     "bgColor": "red",
     "brdColor": "red",
@@ -25,7 +25,7 @@
   },
   "btcmonth": {
     "block": "bitcoinchart",
-    "monthlabels": "['1', '2', '3']",
+    "monthlabels": "[1, 2, 3]",
     "labelName": "bitcoin chart",
     "bgColor": "red",
     "brdColor": "red",
