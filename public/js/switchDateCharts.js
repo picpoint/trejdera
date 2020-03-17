@@ -1,4 +1,5 @@
 let crdbitday = document.querySelector('.crdbitday');
+let obj;
 
 crdbitday.addEventListener('click', () => {  
   let xhr = new XMLHttpRequest();
@@ -9,28 +10,31 @@ crdbitday.addEventListener('click', () => {
 
   xhr.addEventListener('readystatechange', () => {
     if(xhr.readyState == 4 && xhr.status == 200) {	  
-    let obj = xhr.responseText;
-    let odjDatas = JSON.parse(obj);
-	  
+    	obj = xhr.response;	
     }
   });
 
   xhr.send();
 
 	var ctx = document.getElementById('bitcoinchart').getContext('2d');
+
+		
+
+	let btcDaylabels = obj.btcday.daylabels;	
 	
-	// let btcDaylabels = obj.daylabels;	
-	// let btcDaylabelName = obj.labelName;
-	// let bgColorRed = obj.bgColor;
-	// let brdColorRed = obj.brdColor;
-	// let btcDaydata = obj.dayData;
-	// console.log('-----------------');
-	// console.log(btcDaylabels);
+	
+	
+	let btcDaylabelName = obj.btcday.labelName;
+	let bgColorRed = obj.btcday.bgColor;
+	let brdColorRed = obj.btcday.brdColor;
+	let btcDaydata = obj.btcday.dayData;
+	console.log('-----------------');
+	console.log(typeof btcDaylabels);
 	// console.log(btcDaylabelName);
 	// console.log(bgColorRed);
 	// console.log(brdColorRed);
 	// console.log(btcDaydata);
-	// console.log('-----------------');
+	console.log('-----------------');
 
 	let btcDayChart = new Charts(btcDaylabels, btcDaylabelName, bgColorRed, brdColorRed, btcDaydata);	
 	btcDayChart.chartMethod();
