@@ -18,22 +18,18 @@ crdbitday.addEventListener('click', () => {
 
 	var ctx = document.getElementById('bitcoinchart').getContext('2d');
 
-		
-
 	let btcDaylabels = obj.btcday.daylabels;	
-	
-	
 	
 	let btcDaylabelName = obj.btcday.labelName;
 	let bgColorRed = obj.btcday.bgColor;
 	let brdColorRed = obj.btcday.brdColor;
 	let btcDaydata = obj.btcday.dayData;
 	console.log('-----------------');
-	console.log(typeof btcDaylabels);
-	// console.log(btcDaylabelName);
-	// console.log(bgColorRed);
-	// console.log(brdColorRed);
-	// console.log(btcDaydata);
+	console.log(btcDaylabels);
+	console.log(btcDaylabelName);
+	console.log(bgColorRed);
+	console.log(brdColorRed);
+	console.log(btcDaydata);
 	console.log('-----------------');
 
 	let btcDayChart = new Charts(btcDaylabels, btcDaylabelName, bgColorRed, brdColorRed, btcDaydata);	
