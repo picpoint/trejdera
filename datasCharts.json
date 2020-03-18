@@ -30,6 +30,70 @@
     "bgColor": "red",
     "brdColor": "red",
     "tmData": ["14", "19", "3", "27"]
+  },
+  "ethhour": {
+    "block": "ethereumchart",
+    "tmlabels": ["3", "6", "9", "12", "15", "18", "24"],
+    "labelName": "ethereum chart",
+    "bgColor": "green",
+    "brdColor": "green",
+    "tmData": ["40", "20", "30", "10", "50", "40", "45", "25", "40", "37", "50"]
+  },
+  "ethday": {
+    "block": "ethereumchart",
+    "tmlabels": ["5", "10", "15", "20", "25", "30"],
+    "labelName": "ethereum chart",
+    "bgColor": "green",
+    "brdColor": "green",
+    "tmData": ["20", "22", "33", "1", "28", "40"]
+  },
+  "ethweek": {
+    "block": "ethereumchart",
+    "tmlabels": ["1", "2", "3", "4"],
+    "labelName": "ethereum chart",
+    "bgColor": "green",
+    "brdColor": "green",
+    "tmData": ["50", "35", "33", "1"]
+  },
+  "ethmonth": {
+    "block": "ethereumchart",
+    "tmlabels": ["1", "2", "3"],
+    "labelName": "ethereum chart",
+    "bgColor": "green",
+    "brdColor": "green",
+    "tmData": ["17", "8", "20", "39"]
+  },
+  "ripphour": {
+    "block": "ripplechart",
+    "tmlabels": ["3", "6", "9", "12", "15", "18", "24"],
+    "labelName": "ripple chart",
+    "bgColor": "green",
+    "brdColor": "green",
+    "tmData": ["10", "5", "15", "0", "5", "45", "50"]
+  },
+  "rippday": {
+    "block": "ripplechart",
+    "tmlabels": ["5", "10", "15", "20", "25", "30"],
+    "labelName": "ripple chart",
+    "bgColor": "green",
+    "brdColor": "green",
+    "tmData": ["2", "15", "15", "1", "5", "4"]
+  },
+  "rippweek": {
+    "block": "ripplechart",
+    "tmlabels": ["1", "2", "3", "4"],
+    "labelName": "ripple chart",
+    "bgColor": "green",
+    "brdColor": "green",
+    "tmData": ["1", "1", "15", "5"]
+  },
+  "rippmonth": {
+    "block": "ripplechart",
+    "tmlabels": ["1", "2", "3"],
+    "labelName": "ripple chart",
+    "bgColor": "green",
+    "brdColor": "green",
+    "tmData": ["4", "4", "4", "0"]
   }
   
 
