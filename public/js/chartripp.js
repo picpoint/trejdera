@@ -1,4 +1,5 @@
 var ctx = document.getElementById('ripplechart').getContext('2d');
+
 let rippHourlabels = ['3', '6', '9', '12', '15', '18', '24'];
 let rippHourlabelName = 'ripple chart';
 let bgColorGreenRippHour = 'green';
@@ -11,64 +12,119 @@ rippcharthour.chartMethod();
 
 
 
-
 let crdripphour = document.querySelector('.crdripphour');
+crdripphour.addEventListener('click', () => {  
+  let xhr = new XMLHttpRequest();  
+  xhr.responseType = 'json';
+  xhr.open('GET', url);
+  xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
-crdripphour.addEventListener('click', () => {
-  let rippHourlabels = ['3', '6', '9', '12', '15', '18', '24'];
-  let rippHourlabelName = 'ripple chart';
-  let bgColorGreenRippHour = 'green';
-  let brdColorGreenRippHour = 'green';
-  let rippHourdata = [10, 5, 15, 0, 5, 45, 50];
+  xhr.addEventListener('readystatechange', () => {
+    if(xhr.readyState == 4 && xhr.status == 200) {	  
+			obj = xhr.response;				
+    }
+  });
 
-  let rippcharthour = new Charts(rippHourlabels, rippHourlabelName, bgColorGreenRippHour, brdColorGreenRippHour, rippHourdata);
-  rippcharthour.chartMethod();  
+  xhr.send();	
+
+	let rippHourlabels = obj.ripphour.tmlabels;	
+	let rippHourlabelName = obj.ripphour.labelName;
+	let bgColorRed = obj.ripphour.bgColor;
+	let brdColorRed = obj.ripphour.brdColor;
+	let rippHourdata = obj.ripphour.tmData;
+
+	let rippHourChart = new Charts(rippHourlabels, rippHourlabelName, bgColorRed, brdColorRed, rippHourdata);	
+	rippHourChart.chartMethod();
+
 });
+
 
 
 
 
 let crdrippday = document.querySelector('.crdrippday');
+crdrippday.addEventListener('click', () => {  
+  let xhr = new XMLHttpRequest();  
+  xhr.responseType = 'json';
+  xhr.open('GET', url);
+  xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
-crdrippday.addEventListener('click', () => {
-  let rippDaylabels = ['5', '10', '15', '20', '25', '30'];
-  let rippDaylabelName = 'ripple chart';
-  let bgColorGreenRippDay = 'green';
-  let brdColorGreenRippDay = 'green';
-  let rippDaydata = [2, 15, 15, 1, 5, 4];
+  xhr.addEventListener('readystatechange', () => {
+    if(xhr.readyState == 4 && xhr.status == 200) {	  
+			obj = xhr.response;				
+    }
+  });
 
-  let rippchartday = new Charts(rippDaylabels, rippDaylabelName, bgColorGreenRippDay, brdColorGreenRippDay, rippDaydata);
-  rippchartday.chartMethod();
+  xhr.send();	
+
+	let rippDaylabels = obj.rippday.tmlabels;	
+	let rippDaylabelName = obj.rippday.labelName;
+	let bgColorRed = obj.rippday.bgColor;
+	let brdColorRed = obj.rippday.brdColor;
+	let rippDaydata = obj.rippday.tmData;
+
+	let rippDayChart = new Charts(rippDaylabels, rippDaylabelName, bgColorRed, brdColorRed, rippDaydata);	
+	rippDayChart.chartMethod();
+
 });
+
 
 
 
 
 let crdrippweek = document.querySelector('.crdrippweek');
+crdrippweek.addEventListener('click', () => {  
+  let xhr = new XMLHttpRequest();  
+  xhr.responseType = 'json';
+  xhr.open('GET', url);
+  xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
-crdrippweek.addEventListener('click', () => {
-  let rippWeeklabels = ['1', '2', '3', '4'];
-  let rippWeeklabelName = 'ripple chart';
-  let bgColorGreenRippWeek = 'green';
-  let brdColorGreenRippWeek = 'green';
-  let rippWeekdata = [1, 1, 15, 5];
+  xhr.addEventListener('readystatechange', () => {
+    if(xhr.readyState == 4 && xhr.status == 200) {	  
+			obj = xhr.response;				
+    }
+  });
 
-  let rippchartweek = new Charts(rippWeeklabels, rippWeeklabelName, bgColorGreenRippWeek, brdColorGreenRippWeek, rippWeekdata);
-  rippchartweek.chartMethod();
+  xhr.send();	
+
+	let rippWeeklabels = obj.rippweek.tmlabels;	
+	let rippWeeklabelName = obj.rippweek.labelName;
+	let bgColorRed = obj.rippweek.bgColor;
+	let brdColorRed = obj.rippweek.brdColor;
+	let rippWeekdata = obj.rippweek.tmData;
+
+	let rippWeekChart = new Charts(rippWeeklabels, rippWeeklabelName, bgColorRed, brdColorRed, rippWeekdata);	
+	rippWeekChart.chartMethod();
+
 });
+
 
 
 
 
 let crdrippmonth = document.querySelector('.crdrippmonth');
+crdrippmonth.addEventListener('click', () => {  
+  let xhr = new XMLHttpRequest();  
+  xhr.responseType = 'json';
+  xhr.open('GET', url);
+  xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
-crdrippmonth.addEventListener('click', () => {
-  let rippMonthlabels = ['1', '2', '3'];
-  let rippMonthlabelName = 'ripple chart';
-  let bgColorGreenRippMonth = 'green';
-  let brdColorGreenRippMonth = 'green';
-  let rippMonthdata = [4, 4, 4, 0];
+  xhr.addEventListener('readystatechange', () => {
+    if(xhr.readyState == 4 && xhr.status == 200) {	  
+			obj = xhr.response;				
+    }
+  });
 
-  let rippchartmonth = new Charts(rippMonthlabels, rippMonthlabelName, bgColorGreenRippMonth, brdColorGreenRippMonth, rippMonthdata);
-  rippchartmonth.chartMethod();
+  xhr.send();	
+
+	let rippMonthlabels = obj.rippmonth.tmlabels;	
+	let rippMonthlabelName = obj.rippmonth.labelName;
+	let bgColorRed = obj.rippmonth.bgColor;
+	let brdColorRed = obj.rippmonth.brdColor;
+	let rippMonthdata = obj.rippmonth.tmData;
+
+	let rippMonthChart = new Charts(rippMonthlabels, rippMonthlabelName, bgColorRed, brdColorRed, rippMonthdata);	
+	rippMonthChart.chartMethod();
+
 });
+
