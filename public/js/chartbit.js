@@ -26,8 +26,7 @@ crdbithour.addEventListener('click', () => {
 
   xhr.addEventListener('readystatechange', () => {
     if(xhr.readyState == 4 && xhr.status == 200) {	  
-			obj = xhr.response;	
-			console.log(obj);
+			obj = xhr.response;				
     }
   });
 
@@ -59,8 +58,7 @@ crdbitday.addEventListener('click', () => {
 
   xhr.addEventListener('readystatechange', () => {
     if(xhr.readyState == 4 && xhr.status == 200) {	  
-			obj = xhr.response;	
-			console.log(obj);
+			obj = xhr.response;				
     }
   });
 
@@ -91,8 +89,7 @@ crdbitweek.addEventListener('click', () => {
 
   xhr.addEventListener('readystatechange', () => {
     if(xhr.readyState == 4 && xhr.status == 200) {	  
-			obj = xhr.response;	
-			console.log(obj);
+			obj = xhr.response;				
     }
   });
 
@@ -124,8 +121,7 @@ crdbitmonth.addEventListener('click', () => {
 
   xhr.addEventListener('readystatechange', () => {
     if(xhr.readyState == 4 && xhr.status == 200) {	  
-			obj = xhr.response;	
-			console.log(obj);
+			obj = xhr.response;				
     }
   });
 
