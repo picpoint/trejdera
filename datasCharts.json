@@ -94,8 +94,37 @@
     "bgColor": "green",
     "brdColor": "green",
     "tmData": ["4", "4", "4", "0"]
+  },
+  "cardanohour": {
+    "block": "cardanochart",
+    "tmlabels": ["3", "6", "9", "12", "15", "18", "24"],
+    "labelName": "cardano chart",
+    "bgColor": "green",
+    "brdColor": "green",
+    "tmData": ["0", "10", "5", "50", "30", "15", "40"]
+  },
+  "cardanoday": {
+    "block": "cardanochart",
+    "tmlabels": ["5", "10", "15", "20", "25", "30"],
+    "labelName": "cardano chart",
+    "bgColor": "green",
+    "brdColor": "green",
+    "tmData": ["1", "2", "3", "4", "5", "6"]
+  },
+  "cardanoweek": {
+    "block": "cardanochart",
+    "tmlabels": ["1", "2", "3", "4"],
+    "labelName": "cardano chart",
+    "bgColor": "green",
+    "brdColor": "green",
+    "tmData": ["41", "2", "5", "44"]
+  },
+  "cardanomonth": {
+    "block": "cardanochart",
+    "tmlabels": ["1", "2", "3"],
+    "labelName": "cardano chart",
+    "bgColor": "green",
+    "brdColor": "green",
+    "tmData": ["15", "8", "32", "35"]
   }
-  
-
-  
 }
