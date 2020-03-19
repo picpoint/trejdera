@@ -1,7 +1,19 @@
+var ctx = document.getElementById('bitcoinchart').getContext('2d');                             // канвас отрисовки графика
+let url = 'https://raw.githubusercontent.com/picpoint/trejdera/master/datasCharts.json';        // url json файлы
+let obj;                                                                                        // переменная в которую будет помещаться ответ запроса
+let crdbitday = document.querySelector('.crdbitday');
 
-// let crdbitday = document.querySelector('.crdbitday');
-// let obj;
-// let url = 'https://raw.githubusercontent.com/picpoint/trejdera/master/datasCharts.json';
+
+
+let btcHourlabels = ['3', '6', '9', '12', '15', '18', '24'];                                    
+let btcHourlabelName = 'bitcoin chart';
+let bgColorRedChartHour = 'red';
+let brdColorRedChartHour = 'red';
+let btcHourdata = [15, 0, 20, 15, 40, 10, 50, 30, 50, 40];
+
+let btccharthour = new Charts(btcHourlabels, btcHourlabelName, bgColorRedChartHour, brdColorRedChartHour, btcHourdata);
+btccharthour.chartMethod();  
+
 
 
 
@@ -20,93 +32,53 @@
 // */
 
 
-// class MakeRequest {
-// 	constructor(btn, canvasId, blockTimelabels, blockTimelabelName, bgColorRed, brdColorRed, blockTimedata, blockTimeChart, blockTimeAjax) {
-// 		this.btn = btn;
-// 		this.canvasId = canvasId;
-// 		this.blockTimelabels = blockTimelabels;
-// 		this.blockTimelabelName = blockTimelabelName;
-// 		this.bgColorRed = bgColorRed;
-// 		this.brdColorRed = brdColorRed;
-// 		this.blockTimedata = blockTimedata,
-// 		this.blockTimeChart = blockTimeChart;
-// 		this.blockTimeAjax = blockTimeAjax;
-// 	}
+class MakeRequest {
+	constructor(btn, canvasId) {
+		this.btn = btn;
+		this.canvasId = canvasId;		
+	}
 
 	
-// 	ajaxRequestMethod() {
-// 		this.btn.addEventListener('click', () => {  
-// 			let xhr = new XMLHttpRequest();		
-// 			xhr.responseType = 'json';
-// 			xhr.open('GET', url);
-// 			xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+	ajaxRequestMethod() {
+		this.btn.addEventListener('click', () => {  
+			let xhr = new XMLHttpRequest();		
+			xhr.responseType = 'json';
+			xhr.open('GET', url);
+			xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
-// 			xhr.addEventListener('readystatechange', () => {
-// 				if(xhr.readyState == 4 && xhr.status == 200) {	  
-// 					obj = xhr.response;	
-// 				}
-// 			});
+			xhr.addEventListener('readystatechange', () => {
+				if(xhr.readyState == 4 && xhr.status == 200) {	  
+					obj = xhr.response;	
+				}
+			});
 
-// 			xhr.send();
+			xhr.send();
 
-// 			var ctx = document.getElementById(this.canvasId).getContext('2d');
+      var ctx = document.getElementById(this.canvasId).getContext('2d');
+      
+      let blockTimelabels = obj.blockTime.tmlabels;
+      let blockTimelabelName = obj.blockTime.labelName;
+      let bgColorRed = obj.blockTime.bgColor;
+      let brdColorRed = obj.blockTime.brdColor;
+      let blockTimedata = obj.blockTime.tmData;
+      
+      // let btcDaylabels = obj.btcday.tmlabels;	
+      // let btcDaylabelName = obj.btcday.labelName;
+      // let bgColorRed = obj.btcday.bgColor;
+      // let brdColorRed = obj.btcday.brdColor;
+      // let btcDaydata = obj.btcday.tmData;
+      
 
-// 			this.blockTimelabels = obj.this.blockTimeAjax.tmlabels;
-// 			this.blockTimelabelName = obj.this.blockTimeAjax.labelName;
-			
-// 			console.log(this.blockTimelabels);
-// 			console.log(this.blockTimelabelName);
+			let blockTimeChart = new Charts(blockTimelabels, blockTimelabelName, bgColorRed, brdColorRed, blockTimedata);	
+			blockTimeChart.chartMethod();
+		});
 
+	}
 
-
-// 			// let btcDaylabels = obj.btcday.daylabels;	
-// 			// let btcDaylabelName = obj.btcday.labelName;
-// 			// let bgColorRed = obj.btcday.bgColor;
-// 			// let brdColorRed = obj.btcday.brdColor;
-// 			// let btcDaydata = obj.btcday.dayData;
-// 			let btcDayChart = new Charts(btcDaylabels, btcDaylabelName, bgColorRed, brdColorRed, btcDaydata);	
-// 			btcDayChart.chartMethod();
-// 		});
-
-// 	}
-
-
-// }
-
-// let bitcoin = new MakeRequest(crdbitday, 'bitcoinchart');
-// bitcoin.ajaxRequestMethod();
-
- //----------------------------------
+}
 
 
-// let crdbitday = document.querySelector('.crdbitday');
-// let obj;
+let bitcoin = new MakeRequest(crdbitday, 'bitcoinchart');
+bitcoin.ajaxRequestMethod();
 
-// crdbitday.addEventListener('click', () => {  
-//   let xhr = new XMLHttpRequest();
-//   let url = 'https://raw.githubusercontent.com/picpoint/trejdera/master/datasCharts.json';
-//   xhr.responseType = 'json';
-//   xhr.open('GET', url);
-//   xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-
-//   xhr.addEventListener('readystatechange', () => {
-//     if(xhr.readyState == 4 && xhr.status == 200) {	  
-// 			obj = xhr.response;	
-// 			console.log(obj);
-//     }
-//   });
-
-//   xhr.send();
-
-// 	var ctx = document.getElementById('bitcoinchart').getContext('2d');
-
-// 	let btcDaylabels = obj.btcday.tmlabels;	
-// 	let btcDaylabelName = obj.btcday.labelName;
-// 	let bgColorRed = obj.btcday.bgColor;
-// 	let brdColorRed = obj.btcday.brdColor;
-// 	let btcDaydata = obj.btcday.tmData;
-
-// 	let btcDayChart = new Charts(btcDaylabels, btcDaylabelName, bgColorRed, brdColorRed, btcDaydata);	
-// 	btcDayChart.chartMethod();
-
-//  });
+ 
