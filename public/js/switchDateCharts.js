@@ -33,7 +33,7 @@ btccharthour.chartMethod();
 
 
 class MakeRequest {
-	constructor(btn, canvasId, jsonData) {
+	constructor(btn, canvasId) {
 		this.btn = btn;
     this.canvasId = canvasId;    
 	}
@@ -72,7 +72,7 @@ class MakeRequest {
 }
 
 
-let bitcoin = new MakeRequest(crdbitday, 'bitcoinchart');
-bitcoin.ajaxRequestMethod();
+let bitcoinDay = new MakeRequest(crdbitday, 'bitcoinchart');
+bitcoinDay.ajaxRequestMethod();
 
  
