@@ -33,9 +33,9 @@ btccharthour.chartMethod();
 
 
 class MakeRequest {
-	constructor(btn, canvasId) {
+	constructor(btn, canvasId, jsonData) {
 		this.btn = btn;
-		this.canvasId = canvasId;		
+    this.canvasId = canvasId;    
 	}
 
 	
@@ -48,7 +48,8 @@ class MakeRequest {
 
 			xhr.addEventListener('readystatechange', () => {
 				if(xhr.readyState == 4 && xhr.status == 200) {	  
-					obj = xhr.response;	
+          obj = xhr.response;	
+          console.log(obj);
 				}
 			});
 
@@ -56,18 +57,11 @@ class MakeRequest {
 
       var ctx = document.getElementById(this.canvasId).getContext('2d');
       
-      let blockTimelabels = obj.blockTime.tmlabels;
-      let blockTimelabelName = obj.blockTime.labelName;
-      let bgColorRed = obj.blockTime.bgColor;
-      let brdColorRed = obj.blockTime.brdColor;
-      let blockTimedata = obj.blockTime.tmData;
-      
-      // let btcDaylabels = obj.btcday.tmlabels;	
-      // let btcDaylabelName = obj.btcday.labelName;
-      // let bgColorRed = obj.btcday.bgColor;
-      // let brdColorRed = obj.btcday.brdColor;
-      // let btcDaydata = obj.btcday.tmData;
-      
+      let blockTimelabels = obj.btcday.tmlabels;
+      let blockTimelabelName = obj.btcday.labelName;
+      let bgColorRed = obj.btcday.bgColor;
+      let brdColorRed = obj.btcday.brdColor;
+      let blockTimedata = obj.btcday.tmData;      
 
 			let blockTimeChart = new Charts(blockTimelabels, blockTimelabelName, bgColorRed, brdColorRed, blockTimedata);	
 			blockTimeChart.chartMethod();
