@@ -2,6 +2,8 @@ var ctx = document.getElementById('bitcoinchart').getContext('2d');             
 let url = 'https://raw.githubusercontent.com/picpoint/trejdera/master/datasCharts.json';        // url json файлы
 let obj;                                                                                        // переменная в которую будет помещаться ответ запроса
 let crdbitday = document.querySelector('.crdbitday');
+let crdbithour = document.querySelector('.crdbithour');
+
 
 
 
@@ -13,8 +15,6 @@ let btcHourdata = [15, 0, 20, 15, 40, 10, 50, 30, 50, 40];
 
 let btccharthour = new Charts(btcHourlabels, btcHourlabelName, bgColorRedChartHour, brdColorRedChartHour, btcHourdata);
 btccharthour.chartMethod();  
-
-
 
 
 
@@ -58,11 +58,11 @@ class MakeRequest {
 
       var ctx = document.getElementById(this.canvasId).getContext('2d');
       
-      let blockTimelabels = obj.btcday.tmlabels;
-      let blockTimelabelName = obj.btcday.labelName;
-      let bgColorRed = obj.btcday.bgColor;
-      let brdColorRed = obj.btcday.brdColor;
-      let blockTimedata = obj.btcday.tmData;      
+      let blockTimelabels = obj.btchour.tmlabels;
+      let blockTimelabelName = obj.btchour.labelName;
+      let bgColorRed = obj.btchour.bgColor;
+      let brdColorRed = obj.btchour.brdColor;
+      let blockTimedata = obj.btchour.tmData;      
 
 			let blockTimeChart = new Charts(blockTimelabels, blockTimelabelName, bgColorRed, brdColorRed, blockTimedata);	
 			blockTimeChart.chartMethod();
@@ -73,7 +73,11 @@ class MakeRequest {
 }
 
 
-let bitcoinDay = new MakeRequest(crdbitday, 'bitcoinchart');
-bitcoinDay.ajaxRequestMethod();
+let bitcoinHour = new MakeRequest(crdbithour, 'bitcoinchart');
+bitcoinHour.ajaxRequestMethod();
+
+
+// let bitcoinDay = new MakeRequest(crdbitday, 'bitcoinchart');
+// bitcoinDay.ajaxRequestMethod();
 
  
