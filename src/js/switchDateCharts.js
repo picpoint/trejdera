@@ -34,13 +34,21 @@ btccharthour.chartMethod();
 
 
 class MakeRequest {
-	constructor(btn, canvasId) {
+	constructor(btn, canvasId, jsonblock) {
 		this.btn = btn;
     this.canvasId = canvasId;    
+    this.jsonblock = jsonblock;
 	}
 
 	
 	ajaxRequestMethod() {
+    let jsb;
+    let blockTimelabels;
+    let blockTimelabelName;
+    let bgColorRed;
+    let brdColorRed;
+    let blockTimedata;
+
 		this.btn.addEventListener('click', () => {  
 			let xhr = new XMLHttpRequest();		
 			xhr.responseType = 'json';
@@ -51,6 +59,9 @@ class MakeRequest {
 				if(xhr.readyState == 4 && xhr.status == 200) {	  
           obj = xhr.response;	
           console.log(obj);
+          jsb = this.jsonblock;
+          console.log(`jsb - ${jsb}`);
+          console.log(typeof jsb);
 				}
 			});
 
@@ -58,11 +69,22 @@ class MakeRequest {
 
       var ctx = document.getElementById(this.canvasId).getContext('2d');
       
-      let blockTimelabels = obj.btchour.tmlabels;
-      let blockTimelabelName = obj.btchour.labelName;
-      let bgColorRed = obj.btchour.bgColor;
-      let brdColorRed = obj.btchour.brdColor;
-      let blockTimedata = obj.btchour.tmData;      
+      if(jsb == 'btchour') {
+        blockTimelabels = obj.btchour.tmlabels;
+        blockTimelabelName = obj.btchour.labelName;
+        bgColorRed = obj.btchour.bgColor;
+        brdColorRed = obj.btchour.brdColor;
+        blockTimedata = obj.btchour.tmData;      
+      } 
+
+      if(jsb == 'btcday') {
+        blockTimelabels = obj.btcday.tmlabels;
+        blockTimelabelName = obj.btcday.labelName;
+        bgColorRed = obj.btcday.bgColor;
+        brdColorRed = obj.btcday.brdColor;
+        blockTimedata = obj.btcday.tmData;      
+      }
+      
 
 			let blockTimeChart = new Charts(blockTimelabels, blockTimelabelName, bgColorRed, brdColorRed, blockTimedata);	
 			blockTimeChart.chartMethod();
@@ -73,11 +95,11 @@ class MakeRequest {
 }
 
 
-let bitcoinHour = new MakeRequest(crdbithour, 'bitcoinchart');
+let bitcoinHour = new MakeRequest(crdbithour, 'bitcoinchart', 'btchour');
 bitcoinHour.ajaxRequestMethod();
 
 
-// let bitcoinDay = new MakeRequest(crdbitday, 'bitcoinchart');
-// bitcoinDay.ajaxRequestMethod();
+let bitcoinDay = new MakeRequest(crdbitday, 'bitcoinchart', 'btcday');
+bitcoinDay.ajaxRequestMethod();
 
  
