@@ -1,32 +1,32 @@
 let url = 'https://raw.githubusercontent.com/picpoint/trejdera/master/datasCharts.json';        // url json файлы
 let obj;                                                                                        // переменная в которую будет помещаться ответ запроса
-let crdbithour = document.querySelector('.crdbithour');
-let crdbitday = document.querySelector('.crdbitday');
-let crdbitweek = document.querySelector('.crdbitweek');
-let crdbitmonth = document.querySelector('.crdbitmonth');
-let crdethhour = document.querySelector('.crdethhour');
-let crdethday = document.querySelector('.crdethday');
-let crdethweek = document.querySelector('.crdethweek');
-let crdethmonth = document.querySelector('.crdethmonth');
-let crdripphour = document.querySelector('.crdripphour');
-let crdrippday = document.querySelector('.crdrippday');
-let crdrippweek = document.querySelector('.crdrippweek');
-let crdrippmonth = document.querySelector('.crdrippmonth');
-let crdcardanohour = document.querySelector('.crdcardanohour');
-let crdcardanoday = document.querySelector('.crdcardanoday');
-let crdcardanoweek = document.querySelector('.crdcardanoweek');
-let crdcardanomonth = document.querySelector('.crdcardanomonth');
+let crdbithour = document.querySelector('.crdbithour');                                         // кнопки графиков
+let crdbitday = document.querySelector('.crdbitday');                                           // --||--
+let crdbitweek = document.querySelector('.crdbitweek');                                         // --||--
+let crdbitmonth = document.querySelector('.crdbitmonth');                                       // --||--
+let crdethhour = document.querySelector('.crdethhour');                                         // --||--
+let crdethday = document.querySelector('.crdethday');                                           // --||--
+let crdethweek = document.querySelector('.crdethweek');                                         // --||--
+let crdethmonth = document.querySelector('.crdethmonth');                                       // --||--
+let crdripphour = document.querySelector('.crdripphour');                                       // --||--
+let crdrippday = document.querySelector('.crdrippday');                                         // --||--
+let crdrippweek = document.querySelector('.crdrippweek');                                       // --||-- 
+let crdrippmonth = document.querySelector('.crdrippmonth');                                     // --||--
+let crdcardanohour = document.querySelector('.crdcardanohour');                                 // --||--
+let crdcardanoday = document.querySelector('.crdcardanoday');                                   // --||--
+let crdcardanoweek = document.querySelector('.crdcardanoweek');                                 // --||--
+let crdcardanomonth = document.querySelector('.crdcardanomonth');                               // --||--
 
 
 
 var ctx = document.getElementById('bitcoinchart').getContext('2d');                             // канвас отрисовки графика
-let btcHourlabels = ['3', '6', '9', '12', '15', '18', '24'];                                    
-let btcHourlabelName = 'bitcoin chart';
-let bgColorRedChartHour = 'red';
-let brdColorRedChartHour = 'red';
-let btcHourdata = [15, 0, 20, 15, 40, 10, 50, 30, 50, 40];
-let btccharthour = new Charts(btcHourlabels, btcHourlabelName, bgColorRedChartHour, brdColorRedChartHour, btcHourdata);
-btccharthour.chartMethod();  
+let btcHourlabels = ['3', '6', '9', '12', '15', '18', '24'];                                    // данные времени для отрисовки
+let btcHourlabelName = 'bitcoin chart';                                                         // название графики
+let bgColorRedChartHour = 'red';                                                                // цвет фона
+let brdColorRedChartHour = 'red';                                                               // цвет канвы
+let btcHourdata = [15, 0, 20, 15, 40, 10, 50, 30, 50, 40];                                      // данные лоя графика
+let btccharthour = new Charts(btcHourlabels, btcHourlabelName, bgColorRedChartHour, brdColorRedChartHour, btcHourdata);  // передача данные классу
+btccharthour.chartMethod();                                                                     // вызов метода класса для отрисовки
 
 
 
@@ -62,50 +62,39 @@ let crdchart = new Charts(crdHourlabels, crdHourlabelName, bgColorGreenCardanoHo
 crdchart.chartMethod();
 
 
-// /*
-// 	btn - кнопка по которой кликают
-// 	canvasId - канвас в котором будет отрисовываться график
-// 	blockTimelabels - временная шкала графика
-// 	blockTimelabelName - имя метки на графике
-// 	bgColorRed - красный цвет фона
-// 	brdColorRed - цвет рамки
-// 	blockTimedata - данные для отрисовки графика
-// 	blockTimeChart - переменная в которую передаётся класс Charts и которая потом вызывает chartMethod для отрисовки графика
-// 		- на основании всех данных
-// 	blockTimeAjax - блок btcday/btcweek или другой содержащий блок с данными 	
-
-// */
 
 
-class MakeRequest {
+
+
+class MakeRequest {                                                                               // класс запрос аякса
 	constructor(btn, canvasId, jsonblock) {
-		this.btn = btn;
-    this.canvasId = canvasId;    
-    this.jsonblock = jsonblock;
+		this.btn = btn;                                                                               // btn - кнопка по которой кликают
+    this.canvasId = canvasId;                                                                     // canvasId - канвас в котором будет отрисовываться график
+    this.jsonblock = jsonblock;                                                                   // содержит название json блока, с нужными данными 
 	}
 
 	
 	ajaxRequestMethod() {
-    let jsb, blockTimelabels, blockTimelabelName, bgColorRed, brdColorRed, blockTimedata;
+    let jsb, blockTimelabels, blockTimelabelName, bgColorRed, brdColorRed, blockTimedata;         // переменные в которые передаются данные для отрисовки графиков
 
-		this.btn.addEventListener('click', () => {  
-			let xhr = new XMLHttpRequest();		
-			xhr.responseType = 'json';
-			xhr.open('GET', url);
-			xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+		this.btn.addEventListener('click', () => {                                                    // событие клик конкретной кнопки 
+			let xhr = new XMLHttpRequest();		                                                          // инициализируем переменную для ajax
+			xhr.responseType = 'json';                                                                  // определяем тип ответа json
+			xhr.open('GET', url);                                                                       // устанавливаем тип GET
+			xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");                  // устанавливаем тип заголовка
 
-			xhr.addEventListener('readystatechange', () => {
-				if(xhr.readyState == 4 && xhr.status == 200) {	  
-          obj = xhr.response;	          
-          jsb = this.jsonblock;          
+			xhr.addEventListener('readystatechange', () => {                                            // вешаем событие готовности
+				if(xhr.readyState == 4 && xhr.status == 200) {	                                          // если состояние == 4 и статус == 200
+          obj = xhr.response;	                                                                    // в obj присваиваем ответ
+          jsb = this.jsonblock;                                                                   // в jsb присваиваем название json блока, с нужными данными 
 				}
 			});
 
-			xhr.send();
+			xhr.send();                                                                                 // делаем запрос
 
-      var ctx = document.getElementById(this.canvasId).getContext('2d');
+      var ctx = document.getElementById(this.canvasId).getContext('2d');                          // определяем канвас с конкретным названием для отрисовки
       
-      if(jsb == 'btchour') {
+      if(jsb == 'btchour') {                                                                      // если jsb == 'btchour' подставляем нужные данные и так для всех видов
         blockTimelabels = obj.btchour.tmlabels;
         blockTimelabelName = obj.btchour.labelName;
         bgColorRed = obj.btchour.bgColor;
@@ -234,8 +223,8 @@ class MakeRequest {
       }
       
 
-			let blockTimeChart = new Charts(blockTimelabels, blockTimelabelName, bgColorRed, brdColorRed, blockTimedata);	
-			blockTimeChart.chartMethod();
+			let blockTimeChart = new Charts(blockTimelabels, blockTimelabelName, bgColorRed, brdColorRed, blockTimedata); // вызываем класс и передаём в него нужные
+			blockTimeChart.chartMethod();                                                                                 //	- сформированные данные  
 		});
 
 	}
@@ -243,17 +232,14 @@ class MakeRequest {
 }
 
 
-let bitcoinHour = new MakeRequest(crdbithour, 'bitcoinchart', 'btchour');
-bitcoinHour.ajaxRequestMethod();
-
+let bitcoinHour = new MakeRequest(crdbithour, 'bitcoinchart', 'btchour');                                           // вызываем класс MakeRequest, передаем нужные данные 
+bitcoinHour.ajaxRequestMethod();                                                                                    // вызываем метод ajaxRequestMethod();
 
 let bitcoinDay = new MakeRequest(crdbitday, 'bitcoinchart', 'btcday');
 bitcoinDay.ajaxRequestMethod();
 
-
 let bitcoinWeek = new MakeRequest(crdbitweek, 'bitcoinchart', 'btcweek');
 bitcoinWeek.ajaxRequestMethod();
-
 
 let bitcoinMonth = new MakeRequest(crdbitmonth, 'bitcoinchart', 'btcmonth');
 bitcoinMonth.ajaxRequestMethod();
@@ -287,6 +273,7 @@ crdrippWeek.ajaxRequestMethod();
 
 let crdrippMonth = new MakeRequest(crdrippmonth, 'ripplechart', 'rippmonth');
 crdrippMonth.ajaxRequestMethod();
+
 
 
 
