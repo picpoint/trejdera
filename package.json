@@ -20,7 +20,7 @@
   "author": "rmtar",
   "license": "ISC",
   "dependencies": {
-    "chart.js": "^2.9.3",
+    "chart.js": "^2.9.4",
     "express": "^4.17.1",
     "express-handlebars": "^3.1.0"
   },
